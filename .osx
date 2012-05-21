@@ -171,6 +171,9 @@ sudo nvram boot-args="iog=0x0"
 # Enable Resume for Safari to restore Tabs
 defaults write com.apple.Safari NSQuitAlwaysKeepsWindows -int 0
 
+# Enable Text Selection in QuickLook
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
 # Disable Sudden Motion Sensor in a portable Mac with a SSD
 sudo pmset -a sms 0
 
