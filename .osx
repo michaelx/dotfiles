@@ -293,6 +293,9 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Enable Resume for Safari to restore Tabs
 defaults write com.apple.Safari NSQuitAlwaysKeepsWindows -int 0
 
+# Enable backspace navigation
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool YES
+
 ###############################################################################
 # Address Book, Dashboard, iCal, iTunes, Mail, and Disk Utility               #
 ###############################################################################
