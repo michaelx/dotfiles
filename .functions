@@ -3,8 +3,6 @@ function mkd() {
 	mkdir -p "$@" && cd "$@"
 }
 
-<<<<<<< HEAD
-=======
 # Determine size of a file or total size of a directory
 function fs() {
 	if du -b /dev/null > /dev/null 2>&1; then
@@ -19,7 +17,6 @@ function fs() {
 	fi
 }
 
->>>>>>> 9e4f9a84258649aa061f145903ae1681af64814d
 # Use Git’s colored diff when available
 hash git &>/dev/null
 if [ $? -eq 0 ]; then
@@ -28,11 +25,6 @@ if [ $? -eq 0 ]; then
 	}
 fi
 
-<<<<<<< HEAD
-# Create a data URL from an image (works for other file types too, if you tweak the Content-Type afterwards)
-dataurl() {
-	echo "data:image/${1##*.};base64,$(openssl base64 -in "$1")" | tr -d '\n'
-=======
 # Create a data URL from a file
 function dataurl() {
 	local mimeType=$(file -b --mime-type "$1")
@@ -40,7 +32,6 @@ function dataurl() {
 		mimeType="${mimeType};charset=utf-8"
 	fi
 	echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')"
->>>>>>> 9e4f9a84258649aa061f145903ae1681af64814d
 }
 
 # Start an HTTP server from a directory, optionally specifying the port
@@ -52,8 +43,6 @@ function server() {
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
-<<<<<<< HEAD
-=======
 # Start a PHP server from a directory, optionally specifying the port
 # (Requires PHP 5.4.0+.)
 function phpserver() {
@@ -63,7 +52,6 @@ function phpserver() {
 	php -S "${ip}:${port}"
 }
 
->>>>>>> 9e4f9a84258649aa061f145903ae1681af64814d
 # Get gzipped file size
 function gz() {
 	echo "orig size (bytes): "
@@ -76,11 +64,6 @@ function gz() {
 # Send a fake UA string for sites that sniff it instead of using the Accept-Encoding header. (Looking at you, ajax.googleapis.com!)
 function httpcompression() {
 	encoding="$(curl -LIs -H 'User-Agent: Mozilla/5 Gecko' -H 'Accept-Encoding: gzip,deflate,compress,sdch' "$1" | grep '^Content-Encoding:')" && echo "$1 is encoded using ${encoding#* }" || echo "$1 is not using any encoding"
-}
-
-# Gzip-enabled `curl`
-function gurl() {
-	curl -sH "Accept-Encoding: gzip" "$@" | gunzip
 }
 
 # Syntax-highlight JSON strings or files
@@ -114,8 +97,6 @@ function unidecode() {
 function codepoint() {
 	perl -e "use utf8; print sprintf('U+%04X', ord(\"$@\"))"
 	echo # newline
-<<<<<<< HEAD
-=======
 }
 
 # Add note to Notes.app (OS X 10.8)
@@ -162,5 +143,4 @@ function unquarantine() {
 	for attribute in com.apple.metadata:kMDItemDownloadedDate com.apple.metadata:kMDItemWhereFroms com.apple.quarantine; do
 		xattr -r -d "$attribute" "$@"
 	done
->>>>>>> 9e4f9a84258649aa061f145903ae1681af64814d
 }
