@@ -1,0 +1,85 @@
+# Configs
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config secondsBetweenRepeat 0.1
+config checkDefaultsOnLoad true
+config focusCheckWidthMax 3000
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsDuration 3
+config windowHintsSpread true
+#config windowHintsOrder persist
+config windowHintsTopLeftX (windowSizeX-windowSizeX/1.2)-(windowHintsWidth);0
+config windowHintsTopLeftY (windowSizeY-windowSizeY/1.5)-(windowHintsHeight);0
+config windowHintsBackgroundColor 50;53;58;0.2
+config windowHintsWidth 80
+config windowHintsHeight 80
+
+# Monitor Aliases
+alias mon-macbook   1280x800
+alias mon-lcd       1680x1050
+
+# Misc Aliases
+alias showHintsLeftHand hint QWERASDFYXCV
+alias showNormalHint hint QWERTZUASDFGHJYXCVBNM
+
+# App Layout Aliases
+alias 1-Finder          move screenOriginX+250;screenOriginY+200 770;440    ${mon-macbook}
+alias 1-Things          move screenOriginX+220;screenOriginY+100 840;600    ${mon-macbook}
+alias 2-Finder          move screenOriginX+460;screenOriginY+320 770;440    ${mon-lcd}
+alias 2-Things          move screenOriginX+420;screenOriginY+200 840;600    ${mon-lcd}
+alias Transmission      move screenOriginX;screenOriginY 450;400
+
+# Abstract positions
+alias full              move screenOriginX;screenOriginY                  screenSizeX;screenSizeY
+alias lefthalf          move screenOriginX;screenOriginY                  screenSizeX/2;screenSizeY
+alias righthalf         move screenOriginX+screenSizeX/2;screenOriginY    screenSizeX/2;screenSizeY
+alias tophalf           move screenOriginX;screenOriginY                  screenSizeX;screenSizeY/2
+alias bottomhalf        move screenOriginX;screenOriginY+screenSizeY/2    screenSizeX;screenSizeY/2
+alias rightmost         move screenOriginX+screenSizeX*0.4;screenOriginY  screenSizeX*0.6;screenSizeY
+alias rightless         move screenOriginX+screenSizeX*0.6;screenOriginY  screenSizeX*0.4;screenSizeY
+alias leftmost          move screenOriginX;screenOriginY                  screenSizeX*0.6;screenSizeY
+alias leftless          move screenOriginX;screenOriginY                  screenSizeX*0.4;screenSizeY
+
+# Concrete positions
+alias 1-full            move screenOriginX;screenOriginY screenSizeX;screenSizeY         ${mon-macbook}
+alias 1-left            move screenOriginX;screenOriginY screenSizeX/2;screenSizeY         ${mon-macbook}
+alias 1-right           move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY         ${mon-macbook}
+alias 2-full            move screenOriginX;screenOriginY screenSizeX;screenSizeY         ${mon-lcd}
+alias 2-left            move screenOriginX;screenOriginY screenSizeX/2;screenSizeY         ${mon-lcd}
+alias 2-right           move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY         ${mon-lcd}
+alias 2-righttop        move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY/2       ${mon-lcd}
+alias 2-rightbottom     move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2    screenSizeX/2;screenSizeY/2       ${mon-lcd}
+
+# 2 Monitor layout
+layout 2monitors 'Safari':REPEAT                        ${2-full}
+layout 2monitors 'Finder':REPEAT                        ${2-Finder}
+layout 2monitors 'Things':REPEAT                        ${2-Things}
+layout 2monitors 'Transmission':REPEAT                  ${Transmission}
+
+# 1 Monitor layout
+layout 1monitor 'Safari':REPEAT                         ${1-full}
+layout 1monitor 'Finder':REPEAT                         ${1-Finder}
+layout 1monitor 'Things':REPEAT                         ${1-Things}
+layout 1monitor 'Transmission':REPEAT                   ${Transmission}
+
+# Default Layouts
+default 2monitors resolutions:${mon-macbook};${mon-lcd}
+default 1monitor  resolutions:${mon-macbook}
+
+# Layout Bindings
+bind r:alt layout 2monitors
+
+# Basic location Bindings
+bind 1:alt ${full}
+bind 2:alt ${lefthalf}
+bind 3:alt ${righthalf}
+bind t:alt ${tophalf}
+bind b:alt ${bottomhalf}
+
+# Grid
+bind g:alt grid padding:5 ${mon-macbook}:6,2 ${mon-lcd}:6,7
+
+# Window Hints
+bind a:alt ${showHintsLeftHand}
