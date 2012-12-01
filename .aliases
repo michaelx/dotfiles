@@ -8,11 +8,8 @@ alias -- -="cd -"
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
-<<<<<<< HEAD
-=======
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
->>>>>>> 9e4f9a84258649aa061f145903ae1681af64814d
 alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
@@ -46,10 +43,9 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
-<<<<<<< HEAD
 # Get OS X Software Updates, and update Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; npm update npm -g; npm update -g'
-=======
+
 # Gzip-enabled `curl`
 alias gurl="curl --compressed"
 
