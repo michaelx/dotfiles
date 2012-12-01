@@ -3,8 +3,15 @@
 	l = log --pretty=oneline -n 20 --graph
 	# View the current working tree status using the short format
 	s = status -s
+<<<<<<< HEAD
 	# Diff
 	d = diff --patch-with-stat
+=======
+	# Show the diff between the latest commit and the current state
+	d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
+	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
+	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+>>>>>>> 9e4f9a84258649aa061f145903ae1681af64814d
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
 	# Clone a repository including all submodules
@@ -19,6 +26,11 @@
 	remotes = remote -v
 	# Credit an author on the latest commit
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+<<<<<<< HEAD
+=======
+	# Interactive rebase with the given number of latest commits
+	reb = "!r() { git rebase -i HEAD~$1; }; r"
+>>>>>>> 9e4f9a84258649aa061f145903ae1681af64814d
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
 
@@ -71,3 +83,6 @@
 	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
+
+[push]
+	default = simple

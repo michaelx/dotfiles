@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases, and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
 for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
+=======
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH"
+
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+>>>>>>> 9e4f9a84258649aa061f145903ae1681af64814d
 	[ -r "$file" ] && source "$file"
 done
 unset file
@@ -33,7 +43,11 @@ export LANG="en_US"
 complete -W "NSGlobalDomain" defaults
 
 # Add `killall` tab completion for common apps
+<<<<<<< HEAD
 complete -o "nospace" -W "Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer" killall
+=======
+complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall
+>>>>>>> 9e4f9a84258649aa061f145903ae1681af64814d
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
