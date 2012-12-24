@@ -69,6 +69,7 @@ default 2monitors resolutions:${mon-macbook};${mon-lcd}
 default 1monitor  resolutions:${mon-macbook}
 
 # Layout Bindings
+bind r:shift,alt layout 1monitor
 bind r:alt layout 2monitors
 
 # Basic location Bindings
