@@ -24,14 +24,24 @@ alias mon-lcd       1680x1050
 alias showHintsLeftHand hint QWERASDFYXCV
 alias showNormalHint hint QWERTZUASDFGHJYXCVBNM
 
-# App Layout Aliases
+# App Layout Aliases for 1 Monitor Layout
 alias 1-Finder          move screenOriginX+250;screenOriginY+200 770;440    ${mon-macbook}
 alias 1-Things          move screenOriginX+220;screenOriginY+100 840;600    ${mon-macbook}
+alias 1-Tweetbot        move screenOriginX+855;screenOriginY+50 425;680     ${mon-macbook}
+alias 1-Messages        move screenOriginX+250;screenOriginY+100 770;580    ${mon-macbook}
+alias 1-Skype           move screenOriginX+600;screenOriginY+50 680;572     ${mon-macbook}
+
+# App Layout Aliases for 2 Monitor Layout
 alias 2-Finder          move screenOriginX+460;screenOriginY+320 770;440    ${mon-lcd}
-alias 2-Things          move screenOriginX+420;screenOriginY+200 840;600    ${mon-lcd}
+#alias 2-Things         move screenOriginX+420;screenOriginY+200 840;600    ${mon-lcd}
+alias 2-Tweetbot        move screenOriginX+1255;screenOriginY+50 425;680    ${mon-lcd}
+alias 2-Messages        move screenOriginX+460;screenOriginY+200 770;580    ${mon-lcd}
+alias 2-Skype           move screenOriginX+1000;screenOriginY 680;572       ${mon-lcd}
+
+# App Layout Aliases for Universal Monitor Layout
 alias Transmission      move screenOriginX;screenOriginY 450;400
 
-# Abstract positions
+# Abstract Positions
 alias full              move screenOriginX;screenOriginY                  screenSizeX;screenSizeY
 alias lefthalf          move screenOriginX;screenOriginY                  screenSizeX/2;screenSizeY
 alias righthalf         move screenOriginX+screenSizeX/2;screenOriginY    screenSizeX/2;screenSizeY
@@ -41,8 +51,10 @@ alias rightmost         move screenOriginX+screenSizeX*0.4;screenOriginY  screen
 alias rightless         move screenOriginX+screenSizeX*0.6;screenOriginY  screenSizeX*0.4;screenSizeY
 alias leftmost          move screenOriginX;screenOriginY                  screenSizeX*0.6;screenSizeY
 alias leftless          move screenOriginX;screenOriginY                  screenSizeX*0.4;screenSizeY
+alias 1-middle          move screenOriginX+80;screenOriginY+35            1120;731  ${mon-macbook}
+alias 2-middle          move screenOriginX+280;screenOriginY+147          1120;731  ${mon-lcd}
 
-# Concrete positions
+# Concrete Positions
 alias 1-full            move screenOriginX;screenOriginY screenSizeX;screenSizeY         ${mon-macbook}
 alias 1-left            move screenOriginX;screenOriginY screenSizeX/2;screenSizeY         ${mon-macbook}
 alias 1-right           move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY         ${mon-macbook}
@@ -52,16 +64,52 @@ alias 2-right           move screenOriginX+screenSizeX/2;screenOriginY screenSiz
 alias 2-righttop        move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY/2       ${mon-lcd}
 alias 2-rightbottom     move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2    screenSizeX/2;screenSizeY/2       ${mon-lcd}
 
-# 2 Monitor layout
+# 2 Monitor Layout
 layout 2monitors 'Safari':REPEAT                        ${2-full}
+layout 2monitors 'Sublime Text 2':REPEAT                ${2-full}
 layout 2monitors 'Finder':REPEAT                        ${2-Finder}
-layout 2monitors 'Things':REPEAT                        ${2-Things}
+layout 2monitors 'Things':REPEAT                        ${2-middle}
+layout 2monitors 'Calendar':REPEAT                      ${2-middle}
+layout 2monitors 'Mail':REPEAT                          ${2-middle}
+layout 2monitors 'iTunes':REPEAT                        ${2-middle}
+layout 2monitors 'iPhoto':REPEAT                        ${2-middle}
+layout 2monitors 'Notational Velocity':REPEAT           ${2-middle}
+layout 2monitors 'Mou':REPEAT                           ${2-middle}
+layout 2monitors 'Mail':REPEAT                          ${2-middle}
+layout 2monitors 'ForkLift':REPEAT                      ${2-middle}
+layout 2monitors 'Pocket':REPEAT                        ${2-middle}
+layout 2monitors 'Reeder':REPEAT                        ${2-middle}
+layout 2monitors 'Rdio':REPEAT                          ${2-middle}
+layout 2monitors 'Spotify':REPEAT                       ${2-middle}
+layout 2monitors 'Sequel Pro':REPEAT                    ${2-middle}
+layout 2monitors 'SourceTree':REPEAT                    ${2-middle}
+layout 2monitors 'Tweetbot':REPEAT                      ${2-Tweetbot}
+layout 2monitors 'Messages':REPEAT                      ${2-Messages}
+layout 2monitors 'Skype':REPEAT                         ${2-Skype}
 layout 2monitors 'Transmission':REPEAT                  ${Transmission}
 
-# 1 Monitor layout
+# 1 Monitor Layout
 layout 1monitor 'Safari':REPEAT                         ${1-full}
+layout 1monitor 'Sublime Text 2':REPEAT                 ${1-full}
 layout 1monitor 'Finder':REPEAT                         ${1-Finder}
 layout 1monitor 'Things':REPEAT                         ${1-Things}
+layout 1monitor 'Calendar':REPEAT                       ${1-middle}
+layout 1monitor 'Mail':REPEAT                           ${1-middle}
+layout 1monitor 'iTunes':REPEAT                         ${1-middle}
+layout 1monitor 'iPhoto':REPEAT                         ${1-middle}
+layout 1monitor 'Notational Velocity':REPEAT            ${1-middle}
+layout 1monitor 'Mou':REPEAT                            ${1-middle}
+layout 1monitor 'Mail':REPEAT                           ${1-middle}
+layout 1monitor 'ForkLift':REPEAT                       ${1-middle}
+layout 1monitor 'Pocket':REPEAT                         ${1-middle}
+layout 1monitor 'Reeder':REPEAT                         ${1-middle}
+layout 1monitor 'Rdio':REPEAT                           ${1-middle}
+layout 1monitor 'Spotify':REPEAT                        ${1-middle}
+layout 1monitor 'Sequel Pro':REPEAT                     ${1-middle}
+layout 1monitor 'SourceTree':REPEAT                     ${1-middle}
+layout 1monitor 'Tweetbot':REPEAT                       ${1-Tweetbot}
+layout 1monitor 'Messages':REPEAT                       ${1-Messages}
+layout 1monitor 'Skype':REPEAT                          ${1-Skype}
 layout 1monitor 'Transmission':REPEAT                   ${Transmission}
 
 # Default Layouts
