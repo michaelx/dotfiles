@@ -1,6 +1,9 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
 
+# Node path
+export NODE_PATH="/usr/local/lib/node"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -37,3 +40,9 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# Jump to the Finder location
+cdf() {
+    target=`osascript -e 'tell application "Finder" to get POSIX path of (target of front Finder window as text)'`
+    cd "$target"
+}

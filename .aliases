@@ -143,3 +143,15 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+# Open a Finder window to the current location in the shell
+alias f='open -a Finder ./'
+
+# Test internet speed
+alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
+
+# Change DNS server
+alias dns='sh ~/Projects/Development/dns.sh'
+
+# Start, restart, stop Apache, MySQL, PHP
+alias amp='sh ~/Projects/Development/amp.sh'
