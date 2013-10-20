@@ -73,6 +73,7 @@ layout 2monitors 'Calendar':REPEAT                      ${2-middle}
 layout 2monitors 'Mail':REPEAT                          ${2-middle}
 layout 2monitors 'iTunes':REPEAT                        ${2-middle}
 layout 2monitors 'iPhoto':REPEAT                        ${2-middle}
+layout 2monitors '1Password 4':REPEAT                   ${2-middle}
 layout 2monitors 'Notational Velocity':REPEAT           ${2-middle}
 layout 2monitors 'Mou':REPEAT                           ${2-middle}
 layout 2monitors 'Mail':REPEAT                          ${2-middle}
@@ -97,6 +98,7 @@ layout 1monitor 'Calendar':REPEAT                       ${1-middle}
 layout 1monitor 'Mail':REPEAT                           ${1-middle}
 layout 1monitor 'iTunes':REPEAT                         ${1-middle}
 layout 1monitor 'iPhoto':REPEAT                         ${1-middle}
+layout 1monitor '1Password 4':REPEAT                    ${1-middle}
 layout 1monitor 'Notational Velocity':REPEAT            ${1-middle}
 layout 1monitor 'Mou':REPEAT                            ${1-middle}
 layout 1monitor 'Mail':REPEAT                           ${1-middle}
