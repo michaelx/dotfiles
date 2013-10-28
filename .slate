@@ -80,8 +80,9 @@ layout 2monitors 'Mail':REPEAT                          ${2-middle}
 layout 2monitors 'ForkLift':REPEAT                      ${2-middle}
 layout 2monitors 'Pocket':REPEAT                        ${2-middle}
 layout 2monitors 'Reeder':REPEAT                        ${2-middle}
+layout 2monitors 'ReadKit':REPEAT                       ${2-middle}
 layout 2monitors 'Rdio':REPEAT                          ${2-middle}
-layout 2monitors 'Spotify':REPEAT                       ${2-middle}
+layout 2monitors 'Spotify':REPEAT                       ${2-full}
 layout 2monitors 'Sequel Pro':REPEAT                    ${2-middle}
 layout 2monitors 'SourceTree':REPEAT                    ${2-middle}
 layout 2monitors 'Tweetbot':REPEAT                      ${2-Tweetbot}
@@ -105,8 +106,9 @@ layout 1monitor 'Mail':REPEAT                           ${1-middle}
 layout 1monitor 'ForkLift':REPEAT                       ${1-middle}
 layout 1monitor 'Pocket':REPEAT                         ${1-middle}
 layout 1monitor 'Reeder':REPEAT                         ${1-middle}
+layout 1monitor 'ReadKit':REPEAT                        ${1-middle}
 layout 1monitor 'Rdio':REPEAT                           ${1-middle}
-layout 1monitor 'Spotify':REPEAT                        ${1-middle}
+layout 1monitor 'Spotify':REPEAT                        ${1-full}
 layout 1monitor 'Sequel Pro':REPEAT                     ${1-middle}
 layout 1monitor 'SourceTree':REPEAT                     ${1-middle}
 layout 1monitor 'Tweetbot':REPEAT                       ${1-Tweetbot}
