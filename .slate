@@ -25,14 +25,14 @@ alias showHintsLeftHand hint QWERASDFYXCV
 alias showNormalHint hint QWERTZUASDFGHJYXCVBNM
 
 # App Layout Aliases for 1 Monitor Layout
-alias 1-Finder          move screenOriginX+250;screenOriginY+200 770;440    ${mon-macbook}
+alias 1-Finder          move screenOriginX+240;screenOriginY+130 790;520    ${mon-macbook}
 alias 1-Things          move screenOriginX+220;screenOriginY+100 840;600    ${mon-macbook}
 alias 1-Tweetbot        move screenOriginX+855;screenOriginY+50 425;680     ${mon-macbook}
 alias 1-Messages        move screenOriginX+250;screenOriginY+100 770;580    ${mon-macbook}
 alias 1-Skype           move screenOriginX+600;screenOriginY+50 680;572     ${mon-macbook}
 
 # App Layout Aliases for 2 Monitor Layout
-alias 2-Finder          move screenOriginX+460;screenOriginY+320 770;440    ${mon-lcd}
+alias 2-Finder          move screenOriginX+470;screenOriginY+270 790;520    ${mon-lcd}
 #alias 2-Things         move screenOriginX+420;screenOriginY+200 840;600    ${mon-lcd}
 alias 2-Tweetbot        move screenOriginX+1255;screenOriginY+50 425;680    ${mon-lcd}
 alias 2-Messages        move screenOriginX+460;screenOriginY+200 770;580    ${mon-lcd}
