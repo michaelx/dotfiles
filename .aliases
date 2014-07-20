@@ -171,3 +171,10 @@ alias tmbackup='/usr/bin/tmutil startbackup'
 # CPU / Mem usage
 alias cpu='top -o cpu'
 alias mem='top -o rsize' # memory
+
+# Launch a server
+alias server="python -m SimpleHTTPServer"
+
+# Open editor
+alias st='open -a "Sublime Text"'
+
