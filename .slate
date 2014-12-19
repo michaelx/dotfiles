@@ -66,23 +66,23 @@ alias 2-rightbottom     move screenOriginX+screenSizeX/2;screenOriginY+screenSiz
 layout 2monitors 'Safari':REPEAT                        ${2-full}
 layout 2monitors 'Sublime Text 2':REPEAT                ${2-full}
 layout 2monitors 'Finder':REPEAT                        ${2-Finder}
-layout 2monitors 'Things':REPEAT                        ${2-middle}
+layout 2monitors 'Asana':REPEAT                         ${2-full}
 layout 2monitors 'Calendar':REPEAT                      ${2-full}
 layout 2monitors 'Mail':REPEAT                          ${2-middle}
 layout 2monitors 'iTunes':REPEAT                        ${2-middle}
-layout 2monitors 'iPhoto':REPEAT                        ${2-middle}
+layout 2monitors 'iPhoto':REPEAT                        ${2-full}
 layout 2monitors '1Password 4':REPEAT                   ${2-middle}
 layout 2monitors 'Notational Velocity':REPEAT           ${2-middle}
 layout 2monitors 'Mou':REPEAT                           ${2-middle}
+layout 2monitors 'MacDown':REPEAT                       ${2-middle}
 layout 2monitors 'Mail':REPEAT                          ${2-middle}
 layout 2monitors 'ForkLift':REPEAT                      ${2-middle}
-layout 2monitors 'Pocket':REPEAT                        ${2-middle}
-layout 2monitors 'Reeder':REPEAT                        ${2-middle}
-layout 2monitors 'ReadKit':REPEAT                       ${2-middle}
+layout 2monitors 'ReadKit':REPEAT                       ${2-full}
 layout 2monitors 'Rdio':REPEAT                          ${2-full}
 layout 2monitors 'Spotify':REPEAT                       ${2-full}
 layout 2monitors 'Sequel Pro':REPEAT                    ${2-middle}
 layout 2monitors 'SourceTree':REPEAT                    ${2-middle}
+layout 2monitors 'Slack':REPEAT                         ${2-middle}
 layout 2monitors 'Tweetbot':REPEAT                      ${2-Tweetbot}
 layout 2monitors 'Messages':REPEAT                      ${2-Messages}
 layout 2monitors 'Skype':REPEAT                         ${2-Skype}
@@ -92,23 +92,23 @@ layout 2monitors 'Transmission':REPEAT                  ${Transmission}
 layout 1monitor 'Safari':REPEAT                         ${1-full}
 layout 1monitor 'Sublime Text 2':REPEAT                 ${1-full}
 layout 1monitor 'Finder':REPEAT                         ${1-Finder}
-layout 1monitor 'Things':REPEAT                         ${1-middle}
-layout 1monitor 'Calendar':REPEAT                       ${1-middle}
+layout 1monitor 'Asana':REPEAT                          ${1-full}
+layout 1monitor 'Calendar':REPEAT                       ${1-full}
 layout 1monitor 'Mail':REPEAT                           ${1-middle}
 layout 1monitor 'iTunes':REPEAT                         ${1-middle}
-layout 1monitor 'iPhoto':REPEAT                         ${1-middle}
+layout 1monitor 'iPhoto':REPEAT                         ${1-full}
 layout 1monitor '1Password 4':REPEAT                    ${1-middle}
 layout 1monitor 'Notational Velocity':REPEAT            ${1-middle}
 layout 1monitor 'Mou':REPEAT                            ${1-middle}
+layout 1monitor 'MacDown':REPEAT                        ${1-middle}
 layout 1monitor 'Mail':REPEAT                           ${1-middle}
 layout 1monitor 'ForkLift':REPEAT                       ${1-middle}
-layout 1monitor 'Pocket':REPEAT                         ${1-middle}
-layout 1monitor 'Reeder':REPEAT                         ${1-middle}
-layout 1monitor 'ReadKit':REPEAT                        ${1-middle}
-layout 1monitor 'Rdio':REPEAT                           ${1-middle}
+layout 1monitor 'ReadKit':REPEAT                        ${1-full}
+layout 1monitor 'Rdio':REPEAT                           ${1-full}
 layout 1monitor 'Spotify':REPEAT                        ${1-full}
 layout 1monitor 'Sequel Pro':REPEAT                     ${1-middle}
 layout 1monitor 'SourceTree':REPEAT                     ${1-middle}
+layout 1monitor 'Slack':REPEAT                          ${1-middle}
 layout 1monitor 'Tweetbot':REPEAT                       ${1-Tweetbot}
 layout 1monitor 'Messages':REPEAT                       ${1-Messages}
 layout 1monitor 'Skype':REPEAT                          ${1-Skype}
