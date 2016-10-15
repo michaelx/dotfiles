@@ -51,6 +51,7 @@ alias leftmost          move screenOriginX;screenOriginY                  screen
 alias leftless          move screenOriginX;screenOriginY                  screenSizeX*0.4;screenSizeY
 alias 1-middle          move screenOriginX+80;screenOriginY+35            1120;731  ${mon-macbook}
 alias 2-middle          move screenOriginX+280;screenOriginY+147          1120;731  ${mon-lcd}
+alias mx                move screenOriginX;screenOriginY                  1400;1024
 
 # Concrete Positions
 alias 1-full            move screenOriginX;screenOriginY screenSizeX;screenSizeY         ${mon-macbook}
@@ -64,24 +65,21 @@ alias 2-rightbottom     move screenOriginX+screenSizeX/2;screenOriginY+screenSiz
 
 # 2 Monitor Layout
 layout 2monitors 'Safari':REPEAT                        ${2-full}
-layout 2monitors 'Sublime Text 2':REPEAT                ${2-full}
+layout 2monitors 'Sublime Text':REPEAT                  ${2-full}
 layout 2monitors 'Finder':REPEAT                        ${2-Finder}
 layout 2monitors 'Asana':REPEAT                         ${2-full}
 layout 2monitors 'Calendar':REPEAT                      ${2-full}
-layout 2monitors 'Mail':REPEAT                          ${2-middle}
-layout 2monitors 'iTunes':REPEAT                        ${2-middle}
-layout 2monitors 'iPhoto':REPEAT                        ${2-full}
+layout 2monitors 'Mail':REPEAT                          ${2-full}
+layout 2monitors 'iTunes':REPEAT                        ${2-full}
+layout 2monitors 'Aperture':REPEAT                      ${2-full}
 layout 2monitors '1Password 4':REPEAT                   ${2-middle}
 layout 2monitors 'Notational Velocity':REPEAT           ${2-middle}
-layout 2monitors 'Mou':REPEAT                           ${2-middle}
 layout 2monitors 'MacDown':REPEAT                       ${2-middle}
-layout 2monitors 'Mail':REPEAT                          ${2-middle}
 layout 2monitors 'ForkLift':REPEAT                      ${2-middle}
 layout 2monitors 'ReadKit':REPEAT                       ${2-full}
-layout 2monitors 'Rdio':REPEAT                          ${2-full}
 layout 2monitors 'Spotify':REPEAT                       ${2-full}
-layout 2monitors 'Sequel Pro':REPEAT                    ${2-middle}
-layout 2monitors 'SourceTree':REPEAT                    ${2-middle}
+layout 2monitors 'Sequel Pro':REPEAT                    ${2-full}
+layout 2monitors 'SourceTree':REPEAT                    ${2-full}
 layout 2monitors 'Slack':REPEAT                         ${2-middle}
 layout 2monitors 'Tweetbot':REPEAT                      ${2-Tweetbot}
 layout 2monitors 'Messages':REPEAT                      ${2-Messages}
@@ -90,29 +88,31 @@ layout 2monitors 'Transmission':REPEAT                  ${Transmission}
 
 # 1 Monitor Layout
 layout 1monitor 'Safari':REPEAT                         ${1-full}
-layout 1monitor 'Sublime Text 2':REPEAT                 ${1-full}
+layout 1monitor 'Sublime Text':REPEAT                   ${1-full}
 layout 1monitor 'Finder':REPEAT                         ${1-Finder}
 layout 1monitor 'Asana':REPEAT                          ${1-full}
 layout 1monitor 'Calendar':REPEAT                       ${1-full}
-layout 1monitor 'Mail':REPEAT                           ${1-middle}
-layout 1monitor 'iTunes':REPEAT                         ${1-middle}
-layout 1monitor 'iPhoto':REPEAT                         ${1-full}
+layout 1monitor 'Mail':REPEAT                           ${1-full}
+layout 1monitor 'iTunes':REPEAT                         ${1-full}
+layout 1monitor 'Aperture':REPEAT                       ${1-full}
 layout 1monitor '1Password 4':REPEAT                    ${1-middle}
 layout 1monitor 'Notational Velocity':REPEAT            ${1-middle}
-layout 1monitor 'Mou':REPEAT                            ${1-middle}
 layout 1monitor 'MacDown':REPEAT                        ${1-middle}
-layout 1monitor 'Mail':REPEAT                           ${1-middle}
 layout 1monitor 'ForkLift':REPEAT                       ${1-middle}
 layout 1monitor 'ReadKit':REPEAT                        ${1-full}
-layout 1monitor 'Rdio':REPEAT                           ${1-full}
 layout 1monitor 'Spotify':REPEAT                        ${1-full}
-layout 1monitor 'Sequel Pro':REPEAT                     ${1-middle}
-layout 1monitor 'SourceTree':REPEAT                     ${1-middle}
-layout 1monitor 'Slack':REPEAT                          ${1-middle}
+layout 1monitor 'Sequel Pro':REPEAT                     ${1-full}
+layout 1monitor 'SourceTree':REPEAT                     ${1-full}
+layout 1monitor 'Slack':REPEAT                          ${1-full}
 layout 1monitor 'Tweetbot':REPEAT                       ${1-Tweetbot}
 layout 1monitor 'Messages':REPEAT                       ${1-Messages}
 layout 1monitor 'Skype':REPEAT                          ${1-Skype}
 layout 1monitor 'Transmission':REPEAT                   ${Transmission}
+
+# Portfolio Screenshot Layout
+layout portfolio 'Safari':REPEAT                        ${mx}
+layout portfolio 'Sketch':REPEAT                        ${mx}
+layout portfolio 'Sublime Text':REPEAT                  ${mx}
 
 # Default Layouts
 default 2monitors resolutions:${mon-macbook};${mon-lcd}
@@ -121,6 +121,7 @@ default 1monitor  resolutions:${mon-macbook}
 # Layout Bindings
 bind r:shift,alt layout 1monitor
 bind r:alt layout 2monitors
+bind x:alt layout portfolio
 
 # Basic location Bindings
 bind 1:alt ${full}

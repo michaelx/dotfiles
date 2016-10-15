@@ -14,3 +14,7 @@ Thumbs.db
 .Trashes
 .extra
 .path
+
+# Application specific files
+node_modules
+.sass-cache
