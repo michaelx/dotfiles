@@ -1,41 +1,58 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
 	"default_encoding": "UTF-8",
-	"default_line_ending": "unix",
-	"detect_indentation": false,
-	"draw_white_space": "all",
-	"ensure_newline_at_eof_on_save": false,
+	"detect_slow_plugins": false,
+	"enable_live_count": true,
+	"enable_tab_scrolling": false,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
 		"Desktop.ini",
-		"*.pyc",
-		"._*",
 		"Thumbs.db",
 		".Spotlight-V100",
 		".Trashes"
 	],
 	"folder_exclude_patterns":
 	[
+		".svn",
 		".git",
-		"node_modules"
+		".hg",
+		"CVS",
+		"node_modules",
+		"*.log",
+		".sass-cache*"
 	],
-	"font_face": "Monaco",
+	"font_face": "Source Code Pro",
 	"font_size": 13,
+	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
-	"line_padding_bottom": 5,
+	"line_padding_bottom": 3,
 	"match_brackets": true,
 	"match_brackets_angle": true,
-	"remember_open_files": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
 	"rulers":
 	[
 		80
 	],
-	"show_encoding": true,
-	"show_line_endings": true,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"scroll_past_end": true,
 	"tab_size": 2,
-	"translate_tabs_to_spaces": false,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"uglifyjs_command": "/usr/local/bin/uglifyjs",
 	"word_wrap": true
 }
