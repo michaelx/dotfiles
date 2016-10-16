@@ -70,9 +70,7 @@ brew cask install 1password
 brew cask install textexpander
 brew cask install mattr-slate
 brew cask install flux
-
-# Renaming
-brew cask install forklift
+brew cask install harvest
 
 # Services & Scripts
 brew cask install omnidisksweeper
@@ -108,6 +106,5 @@ brew cask install virtualbox
 # Calca
 # Fantastical
 # Scapple
-# Notational Velocity
 # Hazel
 # tvnamer
