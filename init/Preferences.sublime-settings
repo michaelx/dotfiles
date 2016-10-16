@@ -30,9 +30,6 @@
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
-	"line_padding_bottom": 3,
-	"match_brackets": true,
-	"match_brackets_angle": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -42,17 +39,20 @@
 		"draw_normal",
 		"draw_active"
 	],
+	"line_padding_top": 2,
+	"line_padding_bottom": 2,
+	"match_brackets": true,
+	"match_brackets_angle": true,
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
 		80
 	],
-	"open_files_in_new_window": false,
-	"overlay_scroll_bars": "enabled",
 	"scroll_past_end": true,
 	"tab_size": 2,
 	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"uglifyjs_command": "/usr/local/bin/uglifyjs",
-	"word_wrap": true
+	"uglifyjs_command": "/usr/local/bin/uglifyjs"
 }
