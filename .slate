@@ -75,7 +75,7 @@ layout 2monitors 'Aperture':REPEAT                      ${2-full}
 layout 2monitors '1Password 4':REPEAT                   ${2-middle}
 layout 2monitors 'Notational Velocity':REPEAT           ${2-middle}
 layout 2monitors 'MacDown':REPEAT                       ${2-middle}
-layout 2monitors 'ForkLift':REPEAT                      ${2-middle}
+layout 2monitors 'ForkLift':REPEAT                      ${2-full}
 layout 2monitors 'ReadKit':REPEAT                       ${2-full}
 layout 2monitors 'Spotify':REPEAT                       ${2-full}
 layout 2monitors 'Sequel Pro':REPEAT                    ${2-full}
@@ -98,7 +98,7 @@ layout 1monitor 'Aperture':REPEAT                       ${1-full}
 layout 1monitor '1Password 4':REPEAT                    ${1-middle}
 layout 1monitor 'Notational Velocity':REPEAT            ${1-middle}
 layout 1monitor 'MacDown':REPEAT                        ${1-middle}
-layout 1monitor 'ForkLift':REPEAT                       ${1-middle}
+layout 1monitor 'ForkLift':REPEAT                       ${1-full}
 layout 1monitor 'ReadKit':REPEAT                        ${1-full}
 layout 1monitor 'Spotify':REPEAT                        ${1-full}
 layout 1monitor 'Sequel Pro':REPEAT                     ${1-full}
