@@ -71,9 +71,6 @@ alias map="xargs -n1"
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-# Faster npm for europeans
-command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
-
 # Open a Finder window to the current location in the shell
 alias f='open -a Finder ./'
 
