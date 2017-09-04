@@ -44,7 +44,7 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
-brew install homebrew/php/php56 --with-gmp
+#brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -68,14 +68,14 @@ brew install woff2
 #brew install knock
 #brew install netpbm
 #brew install nmap
-brew install pngcheck
+#brew install pngcheck
 #brew install socat
 #brew install sqlmap
 #brew install tcpflow
 #brew install tcpreplay
 #brew install tcptrace
 #brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
+#brew install xpdf
 brew install xz
 
 # Install other useful binaries.
@@ -100,12 +100,10 @@ brew install pigz
 #brew install pv
 brew install rbenv
 brew install rename
-#brew install rhino
+#brew install rlwrap
 brew install rsync
 brew install ssh-copy-id
-#brew install testssl
 brew install tree
-#brew install tmux
 #brew install vbindiff
 brew install webkit2png
 brew install yarn
