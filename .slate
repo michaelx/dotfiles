@@ -21,20 +21,18 @@ alias mon-macbook   1280x800
 alias mon-lcd       1680x1050
 
 # Misc Aliases
-alias showHintsLeftHand hint QWERASDFYXCV
-alias showNormalHint hint QWERTZUASDFGHJYXCVBNM
+alias showHintsLeftHand hint QWERASDFZXCV
+alias showNormalHint hint QWERTYUASDFGHJZXCVBNM
 
 # App Layout Aliases for 1 Monitor Layout
 alias 1-Finder          move screenOriginX+240;screenOriginY+130 790;520    ${mon-macbook}
 alias 1-Tweetbot        move screenOriginX+855;screenOriginY+50 425;680     ${mon-macbook}
 alias 1-Messages        move screenOriginX+250;screenOriginY+100 770;580    ${mon-macbook}
-alias 1-Skype           move screenOriginX+600;screenOriginY+50 680;572     ${mon-macbook}
 
 # App Layout Aliases for 2 Monitor Layout
 alias 2-Finder          move screenOriginX+470;screenOriginY+270 790;520    ${mon-lcd}
 alias 2-Tweetbot        move screenOriginX+1255;screenOriginY+50 425;680    ${mon-lcd}
 alias 2-Messages        move screenOriginX+460;screenOriginY+200 770;580    ${mon-lcd}
-alias 2-Skype           move screenOriginX+1000;screenOriginY 680;572       ${mon-lcd}
 
 # App Layout Aliases for Universal Monitor Layout
 alias Transmission      move screenOriginX;screenOriginY 450;400
@@ -67,7 +65,6 @@ alias 2-rightbottom     move screenOriginX+screenSizeX/2;screenOriginY+screenSiz
 layout 2monitors 'Safari':REPEAT                        ${2-full}
 layout 2monitors 'Sublime Text':REPEAT                  ${2-full}
 layout 2monitors 'Finder':REPEAT                        ${2-Finder}
-layout 2monitors 'Asana':REPEAT                         ${2-full}
 layout 2monitors 'Calendar':REPEAT                      ${2-full}
 layout 2monitors 'Mail':REPEAT                          ${2-full}
 layout 2monitors 'iTunes':REPEAT                        ${2-full}
@@ -83,14 +80,12 @@ layout 2monitors 'SourceTree':REPEAT                    ${2-full}
 layout 2monitors 'Slack':REPEAT                         ${2-middle}
 layout 2monitors 'Tweetbot':REPEAT                      ${2-Tweetbot}
 layout 2monitors 'Messages':REPEAT                      ${2-Messages}
-layout 2monitors 'Skype':REPEAT                         ${2-Skype}
 layout 2monitors 'Transmission':REPEAT                  ${Transmission}
 
 # 1 Monitor Layout
 layout 1monitor 'Safari':REPEAT                         ${1-full}
 layout 1monitor 'Sublime Text':REPEAT                   ${1-full}
 layout 1monitor 'Finder':REPEAT                         ${1-Finder}
-layout 1monitor 'Asana':REPEAT                          ${1-full}
 layout 1monitor 'Calendar':REPEAT                       ${1-full}
 layout 1monitor 'Mail':REPEAT                           ${1-full}
 layout 1monitor 'iTunes':REPEAT                         ${1-full}
@@ -106,7 +101,6 @@ layout 1monitor 'SourceTree':REPEAT                     ${1-full}
 layout 1monitor 'Slack':REPEAT                          ${1-full}
 layout 1monitor 'Tweetbot':REPEAT                       ${1-Tweetbot}
 layout 1monitor 'Messages':REPEAT                       ${1-Messages}
-layout 1monitor 'Skype':REPEAT                          ${1-Skype}
 layout 1monitor 'Transmission':REPEAT                   ${Transmission}
 
 # Portfolio Screenshot Layout

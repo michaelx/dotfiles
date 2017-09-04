@@ -80,6 +80,7 @@ brew install xz
 
 # Install other useful binaries.
 #brew install ack
+brew install casperjs
 #brew install ddclient
 #brew install exiv2
 brew install ghostscript
@@ -87,11 +88,13 @@ brew install git
 brew install git-lfs
 brew install git-standup
 brew install graphicsmagick
+brew install heroku
 brew install imagemagick --with-webp
 #brew install lua
 #brew install lynx
 #brew install p7zip
 brew install pandoc
+brew install phantomjs
 brew install pigz
 #brew install postgresql
 #brew install pv
