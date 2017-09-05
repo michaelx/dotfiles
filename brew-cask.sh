@@ -18,7 +18,7 @@ brew cask install arrsync
 brew cask install arq
 
 # Burning & Ripping
-brew cask install burn
+#brew cask install burn
 brew cask install handbrake
 brew cask install makemkv
 
@@ -35,7 +35,7 @@ brew cask install sourcetree
 brew cask install sublime-text
 
 # Energy
-brew cask install coconutbattery
+#brew cask install coconutbattery
 
 # Gaming
 brew cask install dolphin
@@ -53,7 +53,7 @@ brew cask install imageoptim
 brew cask install google-chrome
 brew cask install firefox
 brew cask install little-snitch
-brew cask install namebench
+#brew cask install namebench
 brew cask install sitesucker
 brew cask install skype
 brew cask install torbrowser
@@ -70,7 +70,7 @@ brew cask install drobo-dashboard
 # Office
 brew cask install calibre
 brew cask install kindle
-brew cask install libreoffice
+#brew cask install libreoffice
 brew cask install licecap
 brew cask install macdown
 brew cask install notational-velocity
@@ -103,20 +103,18 @@ brew cask install virtualbox
 # Amphetamine
 # Calca
 # Day One
+# Ember
 # Express Talk VoIP
-# F-Stop
 # Hazel
-# Illustrator
 # JSON Helper
 # Keynote
-# LiquidCD
 # Marked 2
 # Microsoft Remote Desktop (IE testing)
 # Numbers
 # Pages
-# Photoshop
 # ReadKit
 # Scapple
+# Send Later (Mail plugin)
 # Terminology for OS X Dictionary
 # tvnamer
 # Tweetbot
