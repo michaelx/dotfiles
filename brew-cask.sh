@@ -24,7 +24,6 @@ brew cask install makemkv
 
 # Development
 brew cask install colorpicker-developer
-brew cask install colorpicker-hex
 brew cask install forklift
 brew cask install hex-fiend
 brew cask install integrity
@@ -33,9 +32,6 @@ brew cask install screaming-frog-seo-spider
 brew cask install sequel-pro
 brew cask install sourcetree
 brew cask install sublime-text
-
-# Energy
-#brew cask install coconutbattery
 
 # Gaming
 brew cask install dolphin
@@ -52,9 +48,7 @@ brew cask install imageoptim
 # Internet
 brew cask install google-chrome
 brew cask install firefox
-brew cask install little-snitch
 #brew cask install namebench
-brew cask install sitesucker
 brew cask install skype
 brew cask install torbrowser
 brew cask install transmission
@@ -63,9 +57,6 @@ brew cask install tunnelblick
 
 # Misc
 brew cask install google-earth-pro
-
-# Monitoring
-brew cask install drobo-dashboard
 
 # Office
 brew cask install calibre
@@ -77,11 +68,10 @@ brew cask install notational-velocity
 
 # Productivity
 brew cask install 1password
-brew cask install flux
 brew cask install harvest
 brew cask install iterm2
-brew cask install mattr-slate
-brew cask install textexpander
+brew cask install hammerspoon
+#brew cask install textexpander
 
 # Services & Scripts
 brew cask install omnidisksweeper
@@ -100,13 +90,13 @@ brew cask install virtualbox
 
 # Not on cask but I want regardless
 
-# Amphetamine
 # Calca
-# Day One
-# Ember
-# Express Talk VoIP
+# colorpicker-hex
+# (Day One)
+# drobo-dashboard
+# Ember (replace!)
+# (Express Talk VoIP)
 # Hazel
-# JSON Helper
 # Keynote
 # Marked 2
 # Microsoft Remote Desktop (IE testing)
@@ -114,8 +104,7 @@ brew cask install virtualbox
 # Pages
 # ReadKit
 # Scapple
-# Send Later (Mail plugin)
-# Terminology for OS X Dictionary
-# tvnamer
+# (sitesucker)
+# TextExpander 5 (replace soon!)
 # Tweetbot
 # Xcode

@@ -17,7 +17,7 @@ config windowHintsWidth 80
 config windowHintsHeight 80
 
 # Monitor Aliases
-alias mon-macbook   1280x800
+alias mon-macbook   1440x900
 alias mon-lcd       1680x1050
 
 # Misc Aliases

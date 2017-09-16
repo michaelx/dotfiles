@@ -104,6 +104,7 @@ brew install rename
 brew install rsync
 brew install ssh-copy-id
 brew install tree
+brew install tvnamer
 #brew install vbindiff
 brew install webkit2png
 brew install yarn
