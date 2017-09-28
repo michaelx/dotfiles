@@ -108,6 +108,7 @@ brew install tvnamer
 #brew install vbindiff
 brew install webkit2png
 brew install yarn
+brew install youtube-dl
 brew install zsh
 brew install zopfli
 

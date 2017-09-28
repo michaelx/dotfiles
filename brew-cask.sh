@@ -65,6 +65,7 @@ brew cask install kindle
 brew cask install licecap
 brew cask install macdown
 brew cask install notational-velocity
+brew cask install terminology
 
 # Productivity
 brew cask install 1password

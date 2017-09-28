@@ -15,8 +15,8 @@ spoon.Caffeine:bindHotkeys({toggle={hyper, 'c'}})
 spoon.Caffeine:start()
 
 -- Define monitor names for layout purposes
-display_mbp = 'MBP'
-display_monitor = 'External Display'
+display_mbp = 'Color LCD'
+display_monitor = 'PL2492H'
 
 -- Defines for screen watcher
 lastNumberOfScreens = #hs.screen.allScreens()
@@ -49,25 +49,27 @@ internal_display = {
     {'Notational Velocity',     nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
     {'ReadKit',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Safari',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Sketch',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'SourceTree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Spotify',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Sublime Text',            nil,          display_mbp, hs.layout.maximized, nil, nil},
 }
 
 dual_display = {
-    {'1Password',               nil,          display_monitor, hs.layout.maximized, nil, nil},
-    {'Calendar',                nil,          display_monitor, hs.layout.maximized, nil, nil},
-    {'Finder',                  nil,          display_monitor, hs.geometry.unitrect(2/10, 2/10, 6/10, 6/10), nil, nil},
-    {'ForkLift',                nil,          display_monitor, hs.layout.maximized, nil, nil},
+    {'1Password',               nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Calendar',                nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Finder',                  nil,          display_mbp, hs.geometry.unitrect(2/10, 2/10, 6/10, 6/10), nil, nil},
+    {'ForkLift',                nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'iTerm2',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'iTunes',                  'iTunes',     display_monitor, hs.layout.maximized, nil, nil},
-    {'MacDown',                 nil,          display_monitor, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
-    {'Mail',                    nil,          display_monitor, hs.layout.maximized, nil, nil},
+    {'MacDown',                 nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
+    {'Mail',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Messages',                nil,          display_monitor, hs.geometry.unitrect(2/10, 1/10, 6/10, 8/10), nil, nil},
-    {'Notational Velocity',     nil,          display_monitor, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
-    {'ReadKit',                 nil,          display_monitor, hs.layout.maximized, nil, nil},
-    {'Safari',                  nil,          display_monitor, hs.layout.maximized, nil, nil},
-    {'SourceTree',              nil,          display_monitor, hs.layout.maximized, nil, nil},
+    {'Notational Velocity',     nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
+    {'ReadKit',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Safari',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Sketch',                  nil,          display_monitor, hs.layout.maximized, nil, nil},
+    {'SourceTree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Spotify',                 nil,          display_monitor, hs.layout.maximized, nil, nil},
     {'Sublime Text',            nil,          display_monitor, hs.layout.maximized, nil, nil},
 }
