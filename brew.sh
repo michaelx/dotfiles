@@ -83,21 +83,26 @@ brew install xz
 brew install casperjs
 #brew install ddclient
 #brew install exiv2
+brew install ffmpeg
 brew install ghostscript
 brew install git
 brew install git-lfs
 brew install git-standup
 brew install graphicsmagick
 brew install heroku
+brew install htop
 brew install imagemagick --with-webp
+#brew install libvpx # Install when I need webm!
 #brew install lua
 #brew install lynx
 #brew install p7zip
 brew install pandoc
+brew install par2
 brew install phantomjs
 brew install pigz
 #brew install postgresql
 #brew install pv
+brew install python3
 brew install rbenv
 brew install rename
 #brew install rlwrap

@@ -100,7 +100,6 @@ brew cask install virtualbox
 # Hazel
 # Keynote
 # Marked 2
-# Microsoft Remote Desktop (IE testing)
 # Numbers
 # Pages
 # ReadKit
