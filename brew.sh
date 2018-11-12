@@ -80,14 +80,13 @@ brew install xz
 
 # Install other useful binaries.
 #brew install ack
-brew install casperjs
+#brew install casperjs # Switched to puppeteer-core for projects
 #brew install ddclient
 #brew install exiv2
 brew install ffmpeg
 brew install ghostscript
 brew install git
 brew install git-lfs
-brew install git-standup
 brew install graphicsmagick
 brew install heroku
 brew install htop
@@ -98,15 +97,18 @@ brew install imagemagick --with-webp
 #brew install p7zip
 brew install pandoc
 brew install par2
-brew install phantomjs
+#brew install phantomjs # Switched to puppeteer-core for projects
 brew install pigz
+brew install pipenv
 #brew install postgresql
 #brew install pv
+#brew install pyenv # On server, not main machine
 brew install python3
 brew install rbenv
 brew install rename
 #brew install rlwrap
 brew install rsync
+brew install ruby-build
 brew install ssh-copy-id
 brew install tree
 brew install tvnamer

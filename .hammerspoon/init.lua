@@ -37,7 +37,7 @@ frameCache = {}
 --   Format reminder:
 --     {'App name', 'Window name', 'Display Name', 'unitrect', 'framerect', 'fullframerect'},
 internal_display = {
-    {'1Password',               nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'1Password 6',             nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
     {'Calendar',                nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Finder',                  nil,          display_mbp, hs.geometry.unitrect(2/10, 2/10, 6/10, 6/10), nil, nil},
     {'ForkLift',                nil,          display_mbp, hs.layout.maximized, nil, nil},
@@ -56,7 +56,7 @@ internal_display = {
 }
 
 dual_display = {
-    {'1Password',               nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'1Password 6',             nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Calendar',                nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Finder',                  nil,          display_mbp, hs.geometry.unitrect(2/10, 2/10, 6/10, 6/10), nil, nil},
     {'ForkLift',                nil,          display_mbp, hs.layout.maximized, nil, nil},

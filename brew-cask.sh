@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# To maintain cask ....
-#     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
+# To maintain cask:
+# brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
 # Archiving
 brew cask install keka
@@ -12,12 +12,12 @@ brew cask install max
 brew cask install music-manager
 brew cask install spotify
 
-# Backup & Clone and Synchronization
-brew cask install dropbox
-brew cask install arrsync
+# Backup and Synchronization
 brew cask install arq
+brew cask install borgbackup
+brew cask install dropbox
 
-# Burning & Ripping
+# Burning and Ripping
 #brew cask install burn
 brew cask install handbrake
 brew cask install makemkv
@@ -52,10 +52,10 @@ brew cask install firefox
 brew cask install skype
 brew cask install torbrowser
 brew cask install transmission
-brew cask install tunnelbear
 brew cask install tunnelblick
 
 # Misc
+brew cask install geekbench
 brew cask install google-earth-pro
 
 # Office
@@ -74,7 +74,7 @@ brew cask install iterm2
 brew cask install hammerspoon
 #brew cask install textexpander
 
-# Services & Scripts
+# Services and Scripts
 brew cask install omnidisksweeper
 
 # (UI) Design
@@ -91,13 +91,15 @@ brew cask install virtualbox
 
 # Not on cask but I want regardless
 
+# Affinity Photo
 # Calca
 # colorpicker-hex
 # (Day One)
-# drobo-dashboard
-# Ember (replace!)
+# (drobo-dashboard)
 # (Express Talk VoIP)
 # Hazel
+# iTunes
+# JSON Helper for AppleScript
 # Keynote
 # Marked 2
 # Numbers
