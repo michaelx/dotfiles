@@ -1,7 +1,7 @@
 # Project aliases
 alias p="cd ~/Projects"
 alias mmr="cd ~/Projects/MMR/mmr-web-v3"
-alias mx="cd ~/Projects/MX"
+alias mx="cd ~/Projects/MX/mx-web-v5"
 
 # Show history
 alias h="history"
@@ -71,18 +71,18 @@ alias f='open -a Finder ./'
 # Test internet speed
 alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
 
+# CPU / Mem usage
+alias cpu='htop -s PERCENT_CPU'
+alias mem='htop -s PERCENT_MEM'
+
+# Force Time Machine Backup
+alias tmbackup='/usr/bin/tmutil startbackup'
+
 # Change DNS server
 alias dns='sh ~/Projects/Scripts/dns.sh'
 
 # Start, restart, stop Apache, MySQL, PHP
 alias amp='sh ~/Projects/Scripts/amp.sh'
-
-# Force Time Machine Backup
-alias tmbackup='/usr/bin/tmutil startbackup'
-
-# CPU / Mem usage
-alias cpu='top -o cpu'
-alias mem='top -o rsize' # memory
 
 # Start PostgreSQL
 alias postgresstart='postgres -D /usr/local/var/postgres'

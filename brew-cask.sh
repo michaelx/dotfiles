@@ -8,8 +8,6 @@ brew cask install keka
 
 # Audio
 brew cask install amazon-music
-brew cask install max
-brew cask install music-manager
 brew cask install spotify
 
 # Backup and Synchronization
@@ -28,10 +26,12 @@ brew cask install forklift
 brew cask install hex-fiend
 brew cask install integrity
 brew cask install postico
+brew cask install postman
 brew cask install screaming-frog-seo-spider
 brew cask install sequel-pro
 brew cask install sourcetree
 brew cask install sublime-text
+brew cask install sublime-merge
 
 # Gaming
 brew cask install dolphin
@@ -64,12 +64,15 @@ brew cask install kindle
 #brew cask install libreoffice
 brew cask install licecap
 brew cask install macdown
+brew cask install marked
 brew cask install notational-velocity
+brew cask install scapple
 brew cask install terminology
 
 # Productivity
 brew cask install 1password
 brew cask install harvest
+brew cask install hazel
 brew cask install iterm2
 brew cask install hammerspoon
 #brew cask install textexpander
@@ -78,6 +81,7 @@ brew cask install hammerspoon
 brew cask install omnidisksweeper
 
 # (UI) Design
+brew cask install colorpicker-skalacolor
 brew cask install glueprint
 brew cask install sketch
 
@@ -93,19 +97,14 @@ brew cask install virtualbox
 
 # Affinity Photo
 # Calca
-# colorpicker-hex
 # (Day One)
-# (drobo-dashboard)
 # (Express Talk VoIP)
-# Hazel
 # iTunes
 # JSON Helper for AppleScript
 # Keynote
-# Marked 2
 # Numbers
 # Pages
 # ReadKit
-# Scapple
 # (sitesucker)
 # TextExpander 5 (replace soon!)
 # Tweetbot

@@ -1,29 +1,35 @@
 {
 	"always_show_minimap_viewport": true,
+	"binary_file_patterns":
+	[
+		"_bower_components/",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 	"default_encoding": "UTF-8",
-	"detect_slow_plugins": false,
-	"enable_live_count": true,
 	"enable_tab_scrolling": false,
-	"file_exclude_patterns":
-	[
-		".DS_Store",
-		"Desktop.ini",
-		"Thumbs.db",
-		".Spotlight-V100",
-		".Trashes"
-	],
 	"folder_exclude_patterns":
 	[
 		".svn",
 		".git",
 		".hg",
 		"CVS",
-		"node_modules",
-		"*.log",
-		".sass-cache*"
+		".sass-cache",
+		"node_modules"
 	],
 	"font_face": "Source Code Pro",
 	"font_size": 13,
@@ -39,12 +45,12 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_top": 2,
 	"line_padding_bottom": 2,
+	"line_padding_top": 2,
 	"match_brackets": true,
 	"match_brackets_angle": true,
 	"open_files_in_new_window": false,
-	"overlay_scroll_bars": "enabled",
+	"overlay_scroll_bars": "system",
 	"rulers":
 	[
 		80
