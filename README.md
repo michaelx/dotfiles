@@ -22,7 +22,17 @@
 ./brew-cask.sh
 ```
 
-## Thanks to…
+## Todo
+
+- Add script to install and setup shell env (Oh My Zsh, asdf-vm, etc.)
+
+## Thanks to
 
 * [Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
 * [Chris Jones](http://cmsj.net) and his [Hammerspoon config](https://github.com/cmsj/hammerspoon-config)
+
+## More dotfile projects
+
+* [ptb’s Mac Setup](https://github.com/ptb/mac-setup)
+* thoughtbot dotfiles for [vim, zsh, git, and tmux](https://github.com/thoughtbot/dotfiles)
+* 

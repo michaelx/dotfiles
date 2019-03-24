@@ -4,33 +4,35 @@ export ZSH=/Users/michael/.oh-my-zsh
 # Theme
 ZSH_THEME="dracula"
 
+# Language environment
+export LANG=en_US.UTF-8
+
 # Disable marking untracked files under VCS as dirty.
 # This makes repository status check for large repositories much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Plugins to load
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git zsh-nvm osx compleat sublime)
+plugins=(git osx compleat sublime)
 
+# Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-
-# User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
-
-# Language environment (fixes Pi problems)
-# export LC_ALL=en_US.UTF-8
-# export LANG=en_US.UTF-8
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-
-# MX env
-
-# Load rbenv
-eval "$(rbenv init -)"
-
 # Add Homebrew to $PATH
 export PATH=/usr/local/sbin:$PATH
+
+# Add "g" prefixed utilities to $PATH
+#
+# Homebrew installs commands also provided by macOS with the prefix "g". To use
+# the commands with their normal names, add the directories to the PATH, or add
+# aliases for them, e.g. `alias sed=gsed`.
+#export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+
+# Load asdf
+source $HOME/.asdf/asdf.sh
+source $HOME/.asdf/completions/asdf.bash

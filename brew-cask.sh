@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # To maintain cask:
 # brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
