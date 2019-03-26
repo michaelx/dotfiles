@@ -35,4 +35,3 @@
 
 * [ptb’s Mac Setup](https://github.com/ptb/mac-setup)
 * thoughtbot dotfiles for [vim, zsh, git, and tmux](https://github.com/thoughtbot/dotfiles)
-* 
