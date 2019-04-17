@@ -439,7 +439,7 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 ###############################################################################
 
 # Set Safari’s home page
-defaults write com.apple.Safari HomePage -string "http://launchbot.michaelxander.com"
+defaults write com.apple.Safari HomePage -string "https://launchbot.michaelxander.com"
 
 # Prevent Safari from opening ‘safe’ files automatically after downloading
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false

@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * ${1:Short description}
+ *
+ * ${2:Details}<!--  -->
+ */
+]]></content>
+  <tabTrigger>com-m</tabTrigger>
+  <scope>source.css, source.scss, source.sass, source.less, source.styl</scope>
+  <description>Multiline Comment</description>
+</snippet>

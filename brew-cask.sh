@@ -3,6 +3,9 @@
 # To maintain cask:
 # brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
+# To update applications that don’t update themeselves:
+# brew cask upgrade
+
 # Archiving
 brew cask install keka
 

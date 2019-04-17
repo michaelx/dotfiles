@@ -1,0 +1,18 @@
+{
+  // if you donated set this value to "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DD4SL2AHYJGBW"
+  // to remove the menuitem "Donate 20$" from the sidebar context menu.
+  "i_donated_to_sidebar_enhancements_developer": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DD4SL2AHYJGBW",
+
+  "disabled_menuitem_edit": true,
+  "disabled_menuitem_open_run": true,
+
+  //one of this list: firefox, firefox-developer-edition, chrome, canary, chromium, opera, safari, ie, edge
+  "default_browser": "safari",
+
+  //any of this list: firefox, firefox-developer-edition, chrome, canary, chromium, opera, safari, ie, edge
+  "open_all_browsers": [
+    "firefox",
+    "chrome",
+    "safari"
+  ],
+}

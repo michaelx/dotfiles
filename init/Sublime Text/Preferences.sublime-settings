@@ -2,6 +2,7 @@
 	"always_show_minimap_viewport": true,
 	"binary_file_patterns":
 	[
+		"*.afphoto",
 		"_bower_components/",
 		"*.jpg",
 		"*.jpeg",

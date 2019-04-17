@@ -1,0 +1,38 @@
+[
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
+
+			{
+				"caption": "MacDown",
+				"id": "side-bar-files-open-with-macdown",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "MacDown.app", // OSX
+									"extensions":"md|markdown",  //any file with these extensions
+									"args":[]
+								},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+
+			{
+				"caption": "Marked",
+				"id": "side-bar-files-open-with-marked",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Marked 2.app", // OSX
+									"extensions":"md|markdown",  //any file with these extensions
+									"args":[]
+								},
+				"open_automatically" : false // will close the view/tab and launch the application
+			}
+
+			//separator
+			//{"caption":"-"},
+		]
+	}
+]
