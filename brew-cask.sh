@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # To maintain cask:
-# brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
+# brew update && brew upgrade brew-cask && brew cleanup
 
 # To update applications that don’t update themeselves:
 # brew cask upgrade
@@ -16,7 +16,6 @@ brew cask install spotify
 # Backup and Synchronization
 brew cask install arq
 brew cask install borgbackup
-brew cask install dropbox
 
 # Burning and Ripping
 #brew cask install burn
@@ -73,7 +72,7 @@ brew cask install terminology
 
 # Productivity
 brew cask install 1password
-brew cask install harvest
+#brew cask install harvest # phasing it out
 brew cask install hazel
 brew cask install iterm2
 brew cask install hammerspoon
