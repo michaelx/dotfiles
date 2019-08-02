@@ -24,6 +24,7 @@ brew install wget --with-iri
 
 # Install other useful packages
 #brew install ack
+#brew install asdf # Use git clone install for now.
 #brew install ddclient
 brew install ffmpeg
 brew install ghostscript
@@ -33,15 +34,14 @@ brew install graphicsmagick
 brew install heroku
 brew install htop
 brew install imagemagick --with-webp
+brew install jdupes
 #brew install libvpx # When webm is needed
 brew install libxslt
 brew install libyaml
 #brew install lua
-brew install node
 brew install openssh
 brew install openssl
 brew install pandoc
-brew install pipenv
 #brew install postgresql
 brew install rename
 #brew install rlwrap

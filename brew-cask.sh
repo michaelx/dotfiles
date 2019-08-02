@@ -11,7 +11,6 @@ brew cask install keka
 
 # Audio
 brew cask install amazon-music
-brew cask install spotify
 
 # Backup and Synchronization
 brew cask install arq
@@ -23,7 +22,6 @@ brew cask install handbrake
 brew cask install makemkv
 
 # Development
-brew cask install colorpicker-developer
 brew cask install forklift
 brew cask install hex-fiend
 brew cask install integrity
@@ -32,8 +30,8 @@ brew cask install postman
 brew cask install screaming-frog-seo-spider
 brew cask install sequel-pro
 brew cask install sourcetree
-brew cask install sublime-text
 brew cask install sublime-merge
+brew cask install sublime-text
 
 # Gaming
 brew cask install dolphin
@@ -43,15 +41,14 @@ brew cask install origin
 brew cask install steam
 
 # Image Editing
-brew cask install acorn
 brew cask install imagealpha
 brew cask install imageoptim
 
 # Internet
-brew cask install google-chrome
 brew cask install firefox
+brew cask install google-chrome
 #brew cask install namebench
-brew cask install skype
+#brew cask install skype
 brew cask install torbrowser
 brew cask install transmission
 brew cask install tunnelblick
@@ -63,7 +60,7 @@ brew cask install google-earth-pro
 # Office
 brew cask install calibre
 brew cask install kindle
-#brew cask install libreoffice
+#brew cask install libreoffice # Note: Only needed for some Pandoc workflows.
 brew cask install licecap
 brew cask install macdown
 brew cask install marked
@@ -71,12 +68,11 @@ brew cask install scapple
 brew cask install terminology
 
 # Productivity
-brew cask install 1password
-#brew cask install harvest # phasing it out
+brew cask install 1password # @TODO: Replace with bitwarden_rs
+brew cask install hammerspoon
 brew cask install hazel
 brew cask install iterm2
-brew cask install hammerspoon
-#brew cask install textexpander
+#brew cask install textexpander # @TODO: Replace with Keyboard Maestro
 
 # Services and Scripts
 brew cask install omnidisksweeper
@@ -91,7 +87,8 @@ brew cask install plex-media-server
 brew cask install vlc
 
 # Virtualize
-brew cask install virtualbox
+# Note: Use dev server instead.
+#brew cask install virtualbox
 
 
 # Not on cask but I want regardless
@@ -106,7 +103,6 @@ brew cask install virtualbox
 # Numbers
 # Pages
 # ReadKit
-# (sitesucker)
-# TextExpander 5 (replace soon!)
+# TextExpander 5 (@TODO: Replace with Keyboard Maestro)
 # Tweetbot
 # Xcode
