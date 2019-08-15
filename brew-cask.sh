@@ -72,7 +72,7 @@ brew cask install 1password # @TODO: Replace with bitwarden_rs
 brew cask install hammerspoon
 brew cask install hazel
 brew cask install iterm2
-#brew cask install textexpander # @TODO: Replace with Keyboard Maestro
+brew cask install keyboard-maestro
 
 # Services and Scripts
 brew cask install omnidisksweeper
@@ -103,6 +103,5 @@ brew cask install vlc
 # Numbers
 # Pages
 # ReadKit
-# TextExpander 5 (@TODO: Replace with Keyboard Maestro)
 # Tweetbot
 # Xcode
