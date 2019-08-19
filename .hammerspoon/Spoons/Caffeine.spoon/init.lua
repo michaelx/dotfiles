@@ -1,8 +1,14 @@
 --- === Caffeine ===
 ---
 --- Prevent the screen from going to sleep
-local obj = {}
-obj.__index = obj
+--- Download: https://github.com/Hammerspoon/Spoons/raw/master/Spoons/Caffeine.spoon.zip
+--- Includes multiple menubar icons fix: https://github.com/Hammerspoon/Spoons/pull/65/files#diff-42fa49c0d55da8eff2ff55bef7fa66f5
+local obj = { __gc = true }
+--obj.__index = obj
+setmetatable(obj, obj)
+obj.__gc = function(t)
+    t:stop()
+end
 
 -- Metadata
 obj.name = "Caffeine"
@@ -22,9 +28,6 @@ end
 obj.spoonPath = script_path()
 
 function obj:init()
-    self.menuBarItem = hs.menubar.new(false)
-    self.menuBarItem:setClickCallback(self.clicked)
-    self.setDisplay(hs.caffeinate.get("displayIdle"))
 end
 
 --- Caffeine:bindHotkeys(mapping)
@@ -58,8 +61,12 @@ end
 --- Returns:
 ---  * The Caffeine object
 function obj:start()
-    self.menuBarItem:returnToMenuBar()
-    self.hotkeyToggle:enable()
+    self.menuBarItem = hs.menubar.new()
+    self.menuBarItem:setClickCallback(self.clicked)
+    if (self.hotkeyToggle) then
+        self.hotkeyToggle:enable()
+    end
+    self.setDisplay(hs.caffeinate.get("displayIdle"))
 
     return self
 end
@@ -74,9 +81,11 @@ end
 --- Returns:
 ---  * The Caffeine object
 function obj:stop()
-    self.menuBarItem:removeFromMenuBar()
-    self.hotkeyToggle:disable()
-
+    self.menuBarItem:delete()
+    if (self.hotkeyToggle) then
+        self.hotkeyToggle:disable()
+    end
+    self.menuBarItem = nil
     return self
 end
 

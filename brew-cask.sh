@@ -10,7 +10,6 @@
 brew cask install keka
 
 # Audio
-brew cask install amazon-music
 
 # Backup and Synchronization
 brew cask install arq
@@ -104,4 +103,4 @@ brew cask install vlc
 # Pages
 # ReadKit
 # Tweetbot
-# Xcode
+# Xcode (or: xcode-select --install)
