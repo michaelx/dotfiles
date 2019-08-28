@@ -86,7 +86,7 @@ brew cask install plex-media-server
 brew cask install vlc
 
 # Virtualize
-# Note: Use dev server instead.
+# Note: Use dev server instead. No third-party kexts on main machine!
 #brew cask install virtualbox
 
 
@@ -101,6 +101,6 @@ brew cask install vlc
 # Keynote
 # Numbers
 # Pages
-# ReadKit
+# ReadKit (switch to https://github.com/brentsimmons/NetNewsWire once it has Fever sync support)
 # Tweetbot
 # Xcode (or: xcode-select --install)

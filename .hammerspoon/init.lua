@@ -46,12 +46,10 @@ internal_display = {
     {'MacDown',                 nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
     {'Mail',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Messages',                nil,          display_mbp, hs.geometry.unitrect(2/10, 1/10, 6/10, 8/10), nil, nil},
-    {'Notational Velocity',     nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
     {'ReadKit',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Safari',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Sketch',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-    {'SourceTree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
-    {'Spotify',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Sourcetree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Sublime Text',            nil,          display_mbp, hs.layout.maximized, nil, nil},
 }
 
@@ -65,12 +63,10 @@ dual_display = {
     {'MacDown',                 nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
     {'Mail',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Messages',                nil,          display_monitor, hs.geometry.unitrect(2/10, 1/10, 6/10, 8/10), nil, nil},
-    {'Notational Velocity',     nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
     {'ReadKit',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Safari',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Sketch',                  nil,          display_monitor, hs.layout.maximized, nil, nil},
-    {'SourceTree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
-    {'Spotify',                 nil,          display_monitor, hs.layout.maximized, nil, nil},
+    {'Sourcetree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Sublime Text',            nil,          display_monitor, hs.layout.maximized, nil, nil},
 }
 
@@ -197,8 +193,10 @@ end
 -- Create and start our callbacks
 appWatcher = hs.application.watcher.new(applicationWatcher):start()
 
-screenWatcher = hs.screen.watcher.new(screensChangedCallback)
-screenWatcher:start()
+-- Note: I rarely use my dual screen setup these days, so auto-switching is off
+--       right now. Use the hotkeys to load the dual/primary screen layouts.
+--screenWatcher = hs.screen.watcher.new(screensChangedCallback)
+--screenWatcher:start()
 
 caffeinateWatcher = hs.caffeinate.watcher.new(caffeinateCallback)
 caffeinateWatcher:start()
