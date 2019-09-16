@@ -1,0 +1,4 @@
+{
+  "shell_cmd": "open -a 'Marked 2' '$file'",
+  "file_patterns": ["*.md", "*.markdown"]
+}

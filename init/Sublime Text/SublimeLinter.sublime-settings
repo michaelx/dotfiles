@@ -1,0 +1,11 @@
+// SublimeLinter Settings - User
+{
+  "linters": {
+    "eslint": {
+      "disable_if_not_dependency": true
+    },
+    "stylelint": {
+      "disable_if_not_dependency": true
+    }
+  }
+}

@@ -17,8 +17,10 @@
 		"SideBarEnhancements",
 		"Siteleaf Liquid Syntax",
 		"SublimeLinter",
+		"SublimeLinter-eslint",
 		"SublimeLinter-json",
 		"SublimeLinter-stylelint",
-		"Theme - Spacegray"
+		"Theme - Spacegray",
+		"TypeScript"
 	]
 }

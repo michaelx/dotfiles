@@ -63,6 +63,7 @@ brew cask install kindle
 brew cask install licecap
 brew cask install macdown
 brew cask install marked
+brew cask install netnewswire
 brew cask install scapple
 brew cask install terminology
 
