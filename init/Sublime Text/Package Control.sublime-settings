@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"AutomaticPackageReloader",
 		"Babel",
 		"Color Highlighter",
 		"Emmet",

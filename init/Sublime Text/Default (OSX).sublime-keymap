@@ -1,5 +1,5 @@
-// Emmet support for JSX
 [
+  // Emmet support for JSX
   {
     "keys": ["tab"],
     "command": "expand_abbreviation_by_tab",

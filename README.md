@@ -6,20 +6,26 @@
 
 ### Sensible macOS defaults
 
-```bash
+```sh
 ./.macos
 ```
 
 ### Install Homebrew formulae
 
-```bash
+```sh
 ./brew.sh
 ```
 
 ### Install Homebrew-Cask formulae
 
-```bash
+```sh
 ./brew-cask.sh
+```
+
+### Disable Homebrew’s analytics
+
+```sh
+brew analytics off
 ```
 
 ## Todo
