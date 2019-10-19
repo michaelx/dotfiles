@@ -13,7 +13,7 @@ brew cask install keka
 
 # Backup and Synchronization
 brew cask install arq
-brew cask install borgbackup
+#brew cask install borgbackup
 
 # Burning and Ripping
 #brew cask install burn
@@ -33,8 +33,8 @@ brew cask install sublime-merge
 brew cask install sublime-text
 
 # Gaming
-brew cask install dolphin
-brew cask install enjoyable
+#brew cask install dolphin
+#brew cask install enjoyable
 brew cask install openemu
 brew cask install origin
 brew cask install steam
@@ -47,8 +47,7 @@ brew cask install imageoptim
 brew cask install firefox
 brew cask install google-chrome
 #brew cask install namebench
-#brew cask install skype
-brew cask install torbrowser
+#brew cask install tor-browser
 brew cask install transmission
 brew cask install tunnelblick
 
@@ -57,7 +56,7 @@ brew cask install geekbench
 brew cask install google-earth-pro
 
 # Office
-brew cask install calibre
+#brew cask install calibre
 brew cask install kindle
 #brew cask install libreoffice # Note: Only needed for some Pandoc workflows.
 brew cask install licecap
@@ -68,7 +67,7 @@ brew cask install scapple
 brew cask install terminology
 
 # Productivity
-brew cask install 1password # @TODO: Replace with bitwarden_rs
+brew cask install bitwarden
 brew cask install hammerspoon
 brew cask install hazel
 brew cask install iterm2
@@ -83,7 +82,8 @@ brew cask install glueprint
 brew cask install sketch
 
 # Video
-brew cask install plex-media-server
+#brew cask install plex-media-server
+brew cask install iina
 brew cask install vlc
 
 # Virtualize
