@@ -31,6 +31,7 @@ brew cask install sequel-pro
 brew cask install sourcetree
 brew cask install sublime-merge
 brew cask install sublime-text
+brew cask install visual-studio-code
 
 # Gaming
 #brew cask install dolphin
