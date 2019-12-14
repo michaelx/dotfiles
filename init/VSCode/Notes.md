@@ -2,12 +2,24 @@
 
 ## Extensions
 
-- [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [sleistner.vscode-fileutils](https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils)
-- [yzhang.markdown-all-in-one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-- [christian-kohler.path-intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-- [esbenp.prettier-vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [ionutvmi.spacegray-vscode](https://marketplace.visualstudio.com/items?itemName=ionutvmi.spacegray-vscode)
-- [ban.spellright](https://marketplace.visualstudio.com/items?itemName=ban.spellright)
-- [ms-vscode.sublime-keybindings](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-- [visualstudioexptteam.vscodeintellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+```sh
+code --install-extension ban.spellright
+code --install-extension christian-kohler.path-intellisense
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension Gruntfuggly.todo-tree
+code --install-extension ionutvmi.spacegray-vscode
+code --install-extension jpoissonnier.vscode-styled-components
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension sdras.night-owl
+code --install-extension sissel.shopify-liquid
+code --install-extension sleistner.vscode-fileutils
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension yzhang.markdown-all-in-one
+```
+
+Generate list:
+
+```sh
+code --list-extensions | xargs -L 1 echo code --install-extension
+```

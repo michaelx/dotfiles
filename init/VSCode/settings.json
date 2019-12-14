@@ -72,4 +72,16 @@
     "typescript",
     "typescriptreact",
   ],
+  "prettier.arrowParens": "always",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.suggest.autoImports": false,
+  "typescript.suggest.autoImports": false,
+  "emmet.triggerExpansionOnTab": true,
+  "todo-tree.filtering.useBuiltInExcludes": true,
+  "window.newWindowDimensions": "maximized",
 }

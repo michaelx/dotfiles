@@ -24,6 +24,7 @@ brew cask install makemkv
 brew cask install forklift
 brew cask install hex-fiend
 brew cask install integrity
+brew cask install paw
 brew cask install postico
 brew cask install postman
 brew cask install screaming-frog-seo-spider
