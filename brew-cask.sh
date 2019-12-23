@@ -106,4 +106,5 @@ brew cask install vlc
 # Pages
 # ReadKit (switch to https://github.com/brentsimmons/NetNewsWire once it has Fever sync support)
 # Tweetbot
+# Wipr
 # Xcode (or: xcode-select --install)
