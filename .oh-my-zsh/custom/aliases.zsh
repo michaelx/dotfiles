@@ -92,3 +92,13 @@ alias amp='sh ~/Projects/Scripts/amp.sh'
 
 # Open notes collection
 alias notes='subl --project ~/Documents/Notes/Notes.sublime-project'
+
+# CLI replacements
+alias cat='bat'
+alias top='htop'
+alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
+
+# fzf
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+# add support for ctrl+o to open selected file in VS Code
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"

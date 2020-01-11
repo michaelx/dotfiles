@@ -25,8 +25,11 @@ brew install wget --with-iri
 # Install other useful packages
 #brew install ack
 #brew install asdf # Use git clone install for now.
+brew install bat
 #brew install ddclient
+brew install fd
 brew install ffmpeg
+brew install fzf
 brew install ghostscript
 brew install git
 brew install git-lfs
@@ -39,16 +42,19 @@ brew install jdupes
 brew install libxslt
 brew install libyaml
 #brew install lua
+brew install ncdu
 brew install openssh
 brew install openssl
 brew install pandoc
 #brew install postgresql
 brew install rename
+brew install ripgrep
 #brew install rlwrap
 brew install rsync
 brew install ruby-build
 brew install sqlite
 brew install ssh-copy-id
+brew install tldr
 brew install tree
 #brew install tvnamer
 brew install unixodbc # Driver for sql servers, used by asdf plugins
