@@ -46,7 +46,7 @@ brew cask install imagealpha
 brew cask install imageoptim
 
 # Internet
-brew cask install firefox
+brew cask install firefox-developer-edition
 brew cask install google-chrome
 #brew cask install namebench
 #brew cask install tor-browser
