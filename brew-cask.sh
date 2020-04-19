@@ -23,10 +23,10 @@ brew cask install makemkv
 # Development
 brew cask install forklift
 brew cask install hex-fiend
+brew cask install insomnia
 brew cask install integrity
 brew cask install paw
 brew cask install postico
-brew cask install postman
 brew cask install screaming-frog-seo-spider
 brew cask install sequel-pro
 brew cask install sourcetree
