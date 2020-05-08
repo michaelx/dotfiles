@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Disable analytics
+brew analytics off
+
 # Update the formulae and Homebrew itself
 brew update
 
