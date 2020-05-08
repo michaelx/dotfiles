@@ -2,7 +2,7 @@
 export ZSH=/Users/michael/.oh-my-zsh
 
 # Theme
-ZSH_THEME="dracula"
+ZSH_THEME=dracula
 
 # Language environment
 export LANG=en_US.UTF-8
@@ -12,8 +12,11 @@ export LANG=en_US.UTF-8
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Plugins to load
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git osx compleat sublime)
+plugins=(git zsh-completions)
+# macOS
+plugins+=(osx sublime)
+# Custom plugins (~/.oh-my-zsh/custom/plugins/)
+plugins+=(zsh-autosuggestions)
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -35,4 +38,7 @@ export PATH=/usr/local/sbin:$PATH
 
 # Load asdf
 source $HOME/.asdf/asdf.sh
-source $HOME/.asdf/completions/asdf.bash
+
+# Add asdf completions to fpath, and init
+fpath=(${ASDF_DIR}/completions $fpath)
+autoload -Uz compinit && compinit

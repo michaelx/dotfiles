@@ -26,12 +26,11 @@ brew cask install hex-fiend
 brew cask install insomnia
 brew cask install integrity
 brew cask install paw
-brew cask install postico
 brew cask install screaming-frog-seo-spider
-brew cask install sequel-pro
 brew cask install sourcetree
 brew cask install sublime-merge
 brew cask install sublime-text
+brew cask install tableplus
 brew cask install visual-studio-code
 
 # Gaming
@@ -107,4 +106,4 @@ brew cask install vlc
 # ReadKit (switch to https://github.com/brentsimmons/NetNewsWire once it has Fever sync support)
 # Tweetbot
 # Wipr
-# Xcode (or: xcode-select --install)
+# Xcode (or CLI: xcode-select --install)
