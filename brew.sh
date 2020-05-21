@@ -45,6 +45,7 @@ brew install jdupes
 brew install libxslt
 brew install libyaml
 #brew install lua
+brew install md5deep
 brew install ncdu
 brew install openssh
 brew install openssl
@@ -55,6 +56,7 @@ brew install ripgrep
 #brew install rlwrap
 brew install rsync
 brew install ruby-build
+brew install smartmontools
 brew install sqlite
 brew install ssh-copy-id
 brew install tldr
