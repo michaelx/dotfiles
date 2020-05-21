@@ -7,10 +7,10 @@ alias mx="cd ~/Projects/MX/mx-web-v5"
 alias h="history"
 
 # Get week number
-alias week='date +%V'
+alias week="date +%V"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -46,11 +46,11 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && 
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 # URL-encode strings
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+alias urlencode="python -c 'import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);'"
 
 # Merge PDF files
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
-alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
+alias mergepdf="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py"
 
 # Spotlight (disable/enable)
 alias spotoff="sudo mdutil -a -i off"
@@ -64,24 +64,27 @@ alias map="xargs -n1"
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
+# Put display to sleep
+alias sleepdisplay="pmset displaysleepnow"
+
 # Open a Finder window to the current location in the shell
-alias f='open -a Finder ./'
+alias f="open -a Finder ./"
 
 # Test internet speed
-alias speedtest='wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
+alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
 
 # CPU / Mem usage
-alias cpu='htop -s PERCENT_CPU'
-alias mem='htop -s PERCENT_MEM'
+alias cpu="htop -s PERCENT_CPU"
+alias mem="htop -s PERCENT_MEM"
 
 # Force Time Machine Backup
-alias tmbackup='/usr/bin/tmutil startbackup'
+alias tmbackup="/usr/bin/tmutil startbackup"
 
 # Change DNS server
-alias dns='sh ~/Projects/Scripts/dns.sh'
+alias dns="sh ~/Projects/Scripts/dns.sh"
 
 # Start, restart, stop Apache, MySQL, PHP
-alias amp='sh ~/Projects/Scripts/amp.sh'
+alias amp="sh ~/Projects/Scripts/amp.sh"
 
 # Aliases for "g" prefixed utilities
 #
@@ -91,14 +94,15 @@ alias amp='sh ~/Projects/Scripts/amp.sh'
 #alias sed=gsed
 
 # Open notes collection
-alias notes='subl --project ~/Documents/Notes/Notes.sublime-project'
+alias notes="subl --project ~/Documents/Notes/Notes.sublime-project"
 
 # CLI replacements
-alias cat='bat'
-alias top='htop'
-alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
+alias cat="bat"
+alias top="htop"
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
 # fzf
 alias preview="fzf --preview 'bat --color \"always\" {}'"
+
 # add support for ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
