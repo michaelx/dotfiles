@@ -60,6 +60,7 @@ brew install smartmontools
 brew install sqlite
 brew install ssh-copy-id
 brew install tldr
+brew install tmux
 brew install tree
 #brew install tvnamer
 brew install unixodbc # Driver for sql servers, used by asdf plugins

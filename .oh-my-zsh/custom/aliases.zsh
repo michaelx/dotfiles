@@ -3,6 +3,9 @@ alias p="cd ~/Projects"
 alias mmr="cd ~/Projects/MMR/mmr-web-v3"
 alias mx="cd ~/Projects/MX/mx-web-v5"
 
+# tmux sessions
+alias tmux-default="tmux attach -t default || tmux new -s default"
+
 # Show history
 alias h="history"
 
