@@ -21,12 +21,13 @@ brew cask install handbrake
 brew cask install makemkv
 
 # Development
+brew cask install dteoh-devdocs
 brew cask install forklift
 brew cask install hex-fiend
 brew cask install insomnia
 brew cask install integrity
 brew cask install paw
-brew cask install screaming-frog-seo-spider
+# brew cask install screaming-frog-seo-spider # Note: Use dockerized instead.
 brew cask install sourcetree
 brew cask install sublime-merge
 brew cask install sublime-text
@@ -45,6 +46,7 @@ brew cask install imagealpha
 brew cask install imageoptim
 
 # Internet
+brew cask install discord
 brew cask install firefox-developer-edition
 brew cask install google-chrome
 #brew cask install namebench
@@ -79,6 +81,7 @@ brew cask install omnidisksweeper
 
 # (UI) Design
 brew cask install colorpicker-skalacolor
+brew cask install figma
 brew cask install glueprint
 brew cask install sketch
 
@@ -103,7 +106,6 @@ brew cask install vlc
 # Keynote
 # Numbers
 # Pages
-# ReadKit (switch to https://github.com/brentsimmons/NetNewsWire once it has Fever sync support)
-# Tweetbot
+# Reeder (switch to https://github.com/brentsimmons/NetNewsWire once it has Fever sync support)
 # Wipr
 # Xcode (or CLI: xcode-select --install)

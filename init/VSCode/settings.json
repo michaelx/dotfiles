@@ -1,5 +1,10 @@
 {
   "breadcrumbs.enabled": false,
+  "diffEditor.renderSideBySide": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": true,
   "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": false,
@@ -8,55 +13,43 @@
   "editor.formatOnSave": true,
   "editor.lineHeight": 21,
   "editor.lineNumbers": "on",
-  "editor.matchBrackets": true,
+  "editor.matchBrackets": "near",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.quickSuggestions": true,
+  "editor.rulers": [80],
   "editor.scrollBeyondLastLine": true,
   "editor.snippetSuggestions": "top",
+  "editor.suggest.localityBonus": true,
   "editor.suggestOnTriggerCharacters": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
-  "eslint.autoFixOnSave": false,
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "explorer.openEditors.visible": 0,
+  "files.defaultLanguage": "{activeEditorLanguage}",
   "files.encoding": "utf8",
-  "files.hotExit": "off",
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "window.openFilesInNewWindow": "off",
-  "window.zoomLevel": 0,
-  "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Spacegray Ocean Dark",
-  "workbench.editor.showIcons": false,
-  "workbench.iconTheme": null,
-  "workbench.startupEditor": "none",
-  "spellright.language": [
-    "en",
-    "de"
-  ],
-  "spellright.documentTypes": [
-    "markdown",
-    "plaintext",
-    "mdx"
-  ],
-  "spellright.parserByClass": {
-    "mdx": {
-      "parser": "markdown"
-    }
-  },
-  "editor.rulers": [
-    80
-  ],
   "files.exclude": {
+    "USE_GITIGNORE": true,
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/node_modules": true,
+    "**/node_modules": true
   },
+  "files.hotExit": "off",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "javascript.suggest.autoImports": false,
+  "prettier.arrowParens": "always",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
@@ -64,24 +57,33 @@
     "**/dist": true,
     "**/build": true,
     "**/.build": true,
-    "**/.gh-pages": true,
+    "**/.gh-pages": true
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-  ],
-  "prettier.arrowParens": "always",
-  "prettier.jsxSingleQuote": true,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "spellright.documentTypes": ["markdown", "plaintext", "mdx"],
+  "spellright.language": ["en", "de"],
+  "spellright.parserByClass": {
+    "mdx": {
+      "parser": "markdown"
+    }
   },
-  "javascript.suggest.autoImports": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "todo-tree.filtering.useBuiltInExcludes": "file excludes",
+  "todo-tree.tree.showScanModeButton": false,
   "typescript.suggest.autoImports": false,
-  "emmet.triggerExpansionOnTab": true,
-  "todo-tree.filtering.useBuiltInExcludes": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.newWindowDimensions": "maximized",
+  "window.openFilesInNewWindow": "off",
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Spacegray Ocean Dark",
+  "workbench.editor.showIcons": false,
+  "workbench.iconTheme": null,
+  "workbench.panel.defaultLocation": "right",
+  "workbench.startupEditor": "none",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed"
+  }
 }

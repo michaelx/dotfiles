@@ -37,8 +37,12 @@ frameCache = {}
 --   Format reminder:
 --     {'App name', 'Window name', 'Display Name', 'unitrect', 'framerect', 'fullframerect'},
 internal_display = {
-    {'1Password 6',             nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
+    {'Bitwarden',               nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Calendar',                nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Chrome',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Code',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'DevDocs',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Figma',                   nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Finder',                  nil,          display_mbp, hs.geometry.unitrect(2/10, 2/10, 6/10, 6/10), nil, nil},
     {'ForkLift',                nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'iTerm2',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
@@ -46,7 +50,7 @@ internal_display = {
     {'MacDown',                 nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
     {'Mail',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Messages',                nil,          display_mbp, hs.geometry.unitrect(2/10, 1/10, 6/10, 8/10), nil, nil},
-    {'ReadKit',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Reeder',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Safari',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Sketch',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Sourcetree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
@@ -54,8 +58,12 @@ internal_display = {
 }
 
 dual_display = {
-    {'1Password 6',             nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Bitwarden',               nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Calendar',                nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Chrome',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Code',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'DevDocs',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Figma',                   nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Finder',                  nil,          display_mbp, hs.geometry.unitrect(2/10, 2/10, 6/10, 6/10), nil, nil},
     {'ForkLift',                nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'iTerm2',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
@@ -63,7 +71,7 @@ dual_display = {
     {'MacDown',                 nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
     {'Mail',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Messages',                nil,          display_monitor, hs.geometry.unitrect(2/10, 1/10, 6/10, 8/10), nil, nil},
-    {'ReadKit',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
+    {'Reeder',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Safari',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
     {'Sketch',                  nil,          display_monitor, hs.layout.maximized, nil, nil},
     {'Sourcetree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
