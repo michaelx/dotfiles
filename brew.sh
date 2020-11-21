@@ -29,6 +29,7 @@ brew install wget --with-iri
 #brew install ack
 #brew install asdf # Use git clone install for now.
 brew install bat
+brew install bluetoothconnector
 #brew install ddclient
 brew install fd
 brew install ffmpeg

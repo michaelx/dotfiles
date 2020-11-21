@@ -17,7 +17,7 @@ spoon.MX:start()
 
 -- Available monitors
 display_mbp = 'Color LCD'
-display_external_1 = 'PL2492H'
+display_external_1 = 'DELL U2718Q'
 
 -- Defines for screen watcher
 lastNumberOfScreens = #hs.screen.allScreens()
@@ -26,58 +26,95 @@ lastNumberOfScreens = #hs.screen.allScreens()
 shouldUnmuteOnScreenWake = nil
 
 -- Defines for window grid
-hs.grid.GRIDWIDTH = 4
 hs.grid.GRIDHEIGHT = 4
+hs.grid.GRIDWIDTH = 4
 hs.grid.MARGINX = 0
 hs.grid.MARGINY = 0
+
+-- Window positions
+positions = {
+  full = hs.layout.maximized,
+  fullHeightLarge = hs.geometry.rect(2/16, 0, 12/16, 1),
+
+  top50 = hs.geometry.rect(0, 0, 1, 1/2),
+  top50Left50 = hs.geometry.rect(0, 0, 1/2, 1/2),
+  top50Right50 = hs.geometry.rect(1/2, 0, 1/2, 1/2),
+
+  bottom50 = hs.geometry.rect(0, 1/2, 1, 1/2),
+  bottom50Left50 = hs.geometry.rect(0, 1/2, 1/2, 1/2),
+  bottom50Right50 = hs.geometry.rect(1/2, 1/2, 1/1, 1/2),
+
+  centeredXsmall = hs.geometry.rect(2/10, 1/10, 6/10, 8/10),
+  centeredSmall = hs.geometry.rect(1/10, 1/10, 8/10, 8/10),
+  centeredMedium = hs.geometry.rect(3/16, 1/16, 10/16, 14/16),
+  centeredLarge = hs.geometry.rect(2/16, 1/16, 12/16, 14/16),
+
+  appFinderSmall = hs.geometry.rect(2/10, 2/10, 6/10, 6/10),
+  appFinderLarge = hs.geometry.rect(7/24, 6/24, 10/24, 12/24),
+  appMessagesLarge = hs.geometry.rect(0, 0, 7/16, 12/16),
+}
 
 -- Defines for window maximize toggler
 frameCache = {}
 
 -- Window layouts
---   {'App name', 'Window name', 'Display Name', 'unitrect', 'framerect', 'fullframerect'},
+--   {'App name', 'Window name', 'Display Name', 'rect', 'framerect', 'fullframerect'},
 internal_display = {
-  {'Bitwarden',               nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Calendar',                nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Chrome',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Code',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'DevDocs',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Figma',                   nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Finder',                  nil,          display_mbp, hs.geometry.unitrect(2/10, 2/10, 6/10, 6/10), nil, nil},
-  {'ForkLift',                nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'iTerm2',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'iTunes',                  'iTunes',     display_mbp, hs.layout.maximized, nil, nil},
-  {'MacDown',                 nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
-  {'Mail',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Messages',                nil,          display_mbp, hs.geometry.unitrect(2/10, 1/10, 6/10, 8/10), nil, nil},
-  {'Reeder',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Safari',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Sketch',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Sourcetree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Sublime Text',            nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'TIDAL',                   nil,          display_mbp, hs.layout.maximized, nil, nil},
+  {'Bitwarden',               nil,          display_mbp, positions.full, nil, nil},
+  {'Calendar',                nil,          display_mbp, positions.full, nil, nil},
+  {'Code',                    nil,          display_mbp, positions.full, nil, nil},
+  {'DevDocs',                 nil,          display_mbp, positions.full, nil, nil},
+  {'Figma',                   nil,          display_mbp, positions.full, nil, nil},
+  {'Finder',                  nil,          display_mbp, positions.appFinderSmall, nil, nil},
+  {'ForkLift',                nil,          display_mbp, positions.full, nil, nil},
+  {'Google Chrome',           nil,          display_mbp, positions.full, nil, nil},
+  {'iTerm2',                  nil,          display_mbp, positions.full, nil, nil},
+  {'iTunes',                  'iTunes',     display_mbp, positions.full, nil, nil},
+  {'MacDown',                 nil,          display_mbp, positions.centeredSmall, nil, nil},
+  {'Mail',                    nil,          display_mbp, positions.full, nil, nil},
+  {'Messages',                nil,          display_mbp, positions.centeredXsmall, nil, nil},
+  {'Paw',                     nil,          display_mbp, positions.full, nil, nil},
+  {'Reeder',                  nil,          display_mbp, positions.full, nil, nil},
+  {'Safari',                  nil,          display_mbp, positions.full, nil, nil},
+  {'Sketch',                  nil,          display_mbp, positions.full, nil, nil},
+  {'Sourcetree',              nil,          display_mbp, positions.full, nil, nil},
+  {'Sublime Text',            nil,          display_mbp, positions.full, nil, nil},
+  {'TIDAL',                   nil,          display_mbp, positions.full, nil, nil},
 }
 
 dual_display = {
-  {'Bitwarden',               nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Calendar',                nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Chrome',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Code',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'DevDocs',                 nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Figma',                   nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Finder',                  nil,          display_mbp, hs.geometry.unitrect(2/10, 2/10, 6/10, 6/10), nil, nil},
-  {'ForkLift',                nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'iTerm2',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'iTunes',                  'iTunes',     display_external_1, hs.layout.maximized, nil, nil},
-  {'MacDown',                 nil,          display_mbp, hs.geometry.unitrect(1/10, 1/10, 8/10, 8/10), nil, nil},
-  {'Mail',                    nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Messages',                nil,          display_external_1, hs.geometry.unitrect(2/10, 1/10, 6/10, 8/10), nil, nil},
-  {'Reeder',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Safari',                  nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Sketch',                  nil,          display_external_1, hs.layout.maximized, nil, nil},
-  {'Sourcetree',              nil,          display_mbp, hs.layout.maximized, nil, nil},
-  {'Sublime Text',            nil,          display_external_1, hs.layout.maximized, nil, nil},
-  {'TIDAL',                   nil,          display_mbp, hs.layout.maximized, nil, nil},
+  {'Bitwarden',               nil,          display_external_1, positions.centeredMedium, nil, nil},
+  {'Calendar',                nil,          display_external_1, positions.full, nil, nil},
+  {'Code',                    nil,          display_external_1, positions.full, nil, nil},
+  {'DevDocs',                 nil,          display_external_1, positions.full, nil, nil},
+  {'Figma',                   nil,          display_external_1, positions.full, nil, nil},
+  {'Finder',                  nil,          display_external_1, positions.appFinderLarge, nil, nil},
+  {'ForkLift',                nil,          display_external_1, positions.centeredMedium, nil, nil},
+  {'Google Chrome',           nil,          display_external_1, positions.full, nil, nil},
+  {'iTerm2',                  nil,          display_external_1, positions.full, nil, nil},
+  {'iTunes',                  'iTunes',     display_external_1, positions.full, nil, nil},
+  {'MacDown',                 nil,          display_external_1, positions.centeredMedium, nil, nil},
+  {'Mail',                    nil,          display_external_1, positions.centeredLarge, nil, nil},
+  {'Messages',                nil,          display_external_1, positions.appMessagesLarge, nil, nil},
+  {'Paw',                     nil,          display_external_1, positions.centeredLarge, nil, nil},
+  {'Reeder',                  nil,          display_external_1, positions.full, nil, nil},
+  {'Safari',                  nil,          display_external_1, positions.full, nil, nil},
+  {'Sketch',                  nil,          display_external_1, positions.full, nil, nil},
+  {'Sourcetree',              nil,          display_external_1, positions.centeredMedium, nil, nil},
+  {'Sublime Text',            nil,          display_external_1, positions.fullHeightLarge, nil, nil},
+  {'TIDAL',                   nil,          display_external_1, positions.centeredMedium, nil, nil},
+
+  -- Work apps (only on work machine)
+  -- {'Insomnia',                nil,          display_external_1, positions.centeredMedium, nil, nil},
+  -- {'Microsoft Outlook',       nil,          display_external_1, positions.centeredLarge, nil, nil},
+  -- {'Microsoft Teams',         nil,          display_external_1, positions.centeredMedium, nil, nil},
+}
+
+code_layout = {
+  {'Code',                    nil,          nil, hs.layout.right70, nil, nil},
+  {'Google Chrome',           nil,          nil, hs.layout.left30, nil, nil},
+  {'Safari',                  nil,          nil, hs.layout.left30, nil, nil},
+  {'Sublime Text',            nil,          nil, hs.layout.right70, nil, nil},
 }
 
 -- Toggle an application between being the frontmost app, and being hidden
@@ -169,18 +206,21 @@ end
 -- Hotkeys relating to hyper key
 hyperfns = {}
 
--- Hotkeys to resize windows absolutely
+-- Hotkeys to resize (and move) windows absolutely
 hyperfns['t'] = toggle_window_maximized
 hyperfns['f'] = function() hs.window.focusedWindow():maximize() end
 hyperfns['r'] = function() hs.window.focusedWindow():toggleFullScreen() end
 hyperfns['h'] = function() hs.window.focusedWindow():moveToUnit(hs.layout.left50) end
-hyperfns['j'] = function() hs.layout.apply({{nil, hs.window.focusedWindow(), hs.screen.mainScreen(), hs.geometry.unitrect(0, 0.5, 1, 0.5), nil, nil}}) end
-hyperfns['k'] = function() hs.layout.apply({{nil, hs.window.focusedWindow(), hs.screen.mainScreen(), hs.geometry.unitrect(0, 0, 1, 0.5), nil, nil}}) end
+hyperfns['j'] = function() hs.window.focusedWindow():moveToUnit(positions.bottom50) end
+hyperfns['k'] = function() hs.window.focusedWindow():moveToUnit(positions.top50) end
 hyperfns['l'] = function() hs.window.focusedWindow():moveToUnit(hs.layout.right50) end
+hyperfns[';'] = function() hs.window.focusedWindow():moveToUnit(positions.centeredLarge) end
+hyperfns['\''] = function() hs.window.focusedWindow():centerOnScreen() end
 
 -- Hotkeys to trigger defined layouts
 hyperfns['1'] = function() hs.layout.apply(internal_display) end
 hyperfns['2'] = function() hs.layout.apply(dual_display) end
+hyperfns['3'] = function() hs.layout.apply(code_layout) end
 
 -- Hotkeys to interact with the window grid
 hyperfns['g'] = hs.grid.show
@@ -211,10 +251,9 @@ end
 -- Create and start callbacks
 appWatcher = hs.application.watcher.new(applicationWatcher):start()
 
--- Note: I rarely use my dual screen setup these days, so auto-switching is off
---       right now. Use the hotkeys to load the dual/primary screen layouts.
---screenWatcher = hs.screen.watcher.new(screensChangedCallback)
---screenWatcher:start()
+-- Apply layout based on available screens
+screenWatcher = hs.screen.watcher.new(screensChangedCallback)
+screenWatcher:start()
 
 caffeinateWatcher = hs.caffeinate.watcher.new(caffeinateCallback)
 caffeinateWatcher:start()
