@@ -7,92 +7,93 @@
 # brew cask upgrade
 
 # Archiving
-brew cask install keka
+brew install --cask keka
 
 # Audio
 
 # Backup and Synchronization
-brew cask install arq
-#brew cask install borgbackup
+brew install --cask arq
+#brew install --cask borgbackup
 
 # Burning and Ripping
-#brew cask install burn
-brew cask install handbrake
-brew cask install makemkv
+#brew install --cask burn
+brew install --cask handbrake
+brew install --cask makemkv
 
 # Development
-brew cask install dteoh-devdocs
-brew cask install forklift
-brew cask install hex-fiend
-brew cask install insomnia
-brew cask install integrity
-brew cask install paw
-# brew cask install screaming-frog-seo-spider # Note: Use dockerized instead.
-brew cask install sourcetree
-brew cask install sublime-merge
-brew cask install sublime-text
-brew cask install tableplus
-brew cask install visual-studio-code
+brew install --cask dteoh-devdocs
+brew install --cask fork
+brew install --cask forklift
+brew install --cask hex-fiend
+brew install --cask insomnia
+brew install --cask integrity
+brew install --cask paw
+# brew install --cask screaming-frog-seo-spider # Note: Use dockerized instead.
+brew install --cask sublime-merge
+brew install --cask sublime-text
+brew install --cask tableplus
+brew install --cask visual-studio-code
 
 # Gaming
-#brew cask install dolphin
-#brew cask install enjoyable
-brew cask install openemu
-brew cask install origin
-brew cask install steam
+#brew install --cask dolphin
+#brew install --cask enjoyable
+brew install --cask openemu
+brew install --cask origin
+brew install --cask steam
 
 # Image Editing
-brew cask install imagealpha
-brew cask install imageoptim
+brew install --cask imagealpha
+brew install --cask imageoptim
 
 # Internet
-brew cask install discord
-brew cask install firefox-developer-edition
-brew cask install google-chrome
-#brew cask install namebench
-#brew cask install tor-browser
-brew cask install transmission
-brew cask install tunnelblick
+brew install --cask discord
+brew install --cask firefox-developer-edition
+brew install --cask google-chrome
+#brew install --cask namebench
+#brew install --cask tor-browser
+brew install --cask transmission
+brew install --cask tunnelblick
 
 # Misc
-brew cask install geekbench
-brew cask install google-earth-pro
+brew install --cask geekbench
+brew install --cask google-earth-pro
 
 # Office
-#brew cask install calibre
-brew cask install kindle
-#brew cask install libreoffice # Note: Only needed for some Pandoc workflows.
-brew cask install licecap
-brew cask install macdown
-brew cask install marked
-brew cask install netnewswire
-brew cask install scapple
-brew cask install terminology
+#brew install --cask calibre
+brew install --cask kindle
+#brew install --cask libreoffice # Note: Only needed for some Pandoc workflows.
+brew install --cask licecap
+brew install --cask macdown
+brew install --cask marked
+brew install --cask netnewswire
+brew install --cask scapple
+brew install --cask terminology
+brew install obsidian --cask
 
 # Productivity
-brew cask install bitwarden
-brew cask install hammerspoon
-brew cask install hazel
-brew cask install iterm2
-brew cask install keyboard-maestro
+brew install --cask bitwarden
+brew install --cask hammerspoon
+brew install --cask hazel
+brew install --cask iterm2
+brew install --cask keyboard-maestro
 
 # Services and Scripts
-brew cask install omnidisksweeper
+brew install --cask omnidisksweeper
 
 # (UI) Design
-brew cask install colorpicker-skalacolor
-brew cask install figma
-brew cask install glueprint
-brew cask install sketch
+brew install --cask colorpicker-skalacolor
+brew install --cask figma
+brew install --cask glueprint
+brew install --cask sketch
 
 # Video
-#brew cask install plex-media-server
-brew cask install iina
-brew cask install vlc
+#brew install --cask plex-media-server
+brew install --cask iina
+brew install --cask vlc
 
 # Virtualize
 # Note: Use dev server instead. No third-party kexts on main machine!
-#brew cask install virtualbox
+#brew install --cask virtualbox
 
 
 # Not on cask but I want regardless
