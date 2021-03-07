@@ -28,6 +28,7 @@ brew install --cask hex-fiend
 brew install --cask insomnia
 brew install --cask integrity
 brew install --cask paw
+brew install --cask react-native-debugger
 # brew install --cask screaming-frog-seo-spider # Note: Use dockerized instead.
 brew install --cask sublime-merge
 brew install --cask sublime-text
@@ -65,10 +66,10 @@ brew install --cask kindle
 brew install --cask licecap
 brew install --cask macdown
 brew install --cask marked
-brew install --cask netnewswire
+#brew install --cask netnewswire
 brew install --cask scapple
 brew install --cask terminology
-brew install obsidian --cask
+brew install --cask obsidian
 
 # Productivity
 brew install --cask bitwarden

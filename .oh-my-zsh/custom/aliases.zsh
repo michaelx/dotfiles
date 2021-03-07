@@ -86,9 +86,6 @@ alias tmbackup="/usr/bin/tmutil startbackup"
 # Change DNS server
 alias dns="sh ~/Projects/Scripts/dns.sh"
 
-# Start, restart, stop Apache, MySQL, PHP
-alias amp="sh ~/Projects/Scripts/amp.sh"
-
 # Aliases for "g" prefixed utilities
 #
 # Homebrew installs commands also provided by macOS with the prefix "g". To use
@@ -109,3 +106,7 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 
 # add support for ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+
+# Raspberry Pi
+alias pitemp="vcgencmd measure_temp"
+alias picpuspeed="watch -n 1 vcgencmd measure_clock arm"
